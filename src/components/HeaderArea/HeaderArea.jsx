@@ -58,8 +58,7 @@ const HeaderArea = (props) => {
           height: '80px',
           display: 'flex',
           alignItems: 'center',
-          overflow: 'hidden',
-          position: 'relative'
+          overflow: 'hidden'
         }}
       >
         <div style={{
@@ -176,7 +175,6 @@ const HeaderArea = (props) => {
                      overflow: 'hidden'
                   }}>
                      <Link onClick={ClickHandler} to="/" style={{ 
-                        display: 'block', 
                         width: '100%', 
                         textAlign: 'center',
                         height: '100%',
