@@ -60,14 +60,9 @@ const TestimonialAreaS3 = (props) => {
                <div className="col-xxl-4 col-xl-5 col-lg-6">
                   <div className="title-area mb-30 text-center text-md-start">
                      <span className="sub-title2 style1">WHY CHOOSE US</span>
-                     <h2 className="sec-title text-white">Premium Features at MJ Hotel Dhanbad</h2>
+                     <h2 className="sec-title" style={{color: '#ffffff'}}>Premium Features at MJ Hotel Dhanbad</h2>
                   </div>
                </div>
-               {/* <div className="col-md-auto">
-                  <div className="sec-btn mt-n3 mt-md-0">
-                     <Link onClick={ClickHandler} to="/contact" className="th-btn th-icon style3">Pre-Register Now</Link>
-                  </div>
-               </div> */}
             </div>
             <div className="slider-area">
                <Swiper
@@ -89,24 +84,58 @@ const TestimonialAreaS3 = (props) => {
                      576: { slidesPerView: 1 },
                      768: { slidesPerView: 1 },
                      992: { slidesPerView: 2 },
-                     1200: { slidesPerView: 3, centeredSlides: true },
+                     1200: { slidesPerView: 3, centeredSlides: false },
                   }}
-                  className="swiper th-slider testiSlider3 has-shadow" id="roomSlider1"
+                  className="swiper th-slider testiSlider3"
                >
 
                   {features.map((feature, index) => (
                      <SwiperSlide key={index}>
-                        <div className="testi-box style2">
+                        <div className="testi-box style2" style={{
+                           backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                           backdropFilter: 'blur(10px)',
+                           border: '1px solid rgba(255, 255, 255, 0.2)',
+                           borderRadius: '10px',
+                           padding: '30px',
+                           height: '100%',
+                           opacity: 1,
+                           transform: 'none',
+                           filter: 'none'
+                        }}>
                            <div className="box-quote"><img src={Quote} alt="" /></div>
-                           <p className="box-text">{feature.description}</p>
+                           <p className="box-text" style={{
+                              color: '#ffffff',
+                              fontSize: '16px',
+                              lineHeight: '1.6',
+                              marginBottom: '20px',
+                              opacity: 1,
+                              textShadow: 'none'
+                           }}>{feature.description}</p>
                            <div className="box-wrapper">
                               <div className="box-content">
-                                 <h3 className="box-title">{feature.title}</h3>
-                                 <p className="box-desig">{feature.position}</p>
+                                 <h3 className="box-title" style={{
+                                    color: '#ffffff',
+                                    fontSize: '20px',
+                                    fontWeight: '600',
+                                    marginBottom: '8px',
+                                    opacity: 1,
+                                    textShadow: 'none'
+                                 }}>{feature.title}</h3>
+                                 <p className="box-desig" style={{
+                                    color: '#ffffff',
+                                    opacity: 0.8,
+                                    fontSize: '14px',
+                                    margin: '0',
+                                    textShadow: 'none'
+                                 }}>{feature.position}</p>
                               </div>
                               <div className="ratting-only">
-                                 <i className="fa-sharp fa-solid fa-star"></i>
-                                 <span className="title">5.0</span>
+                                 <i className="fa-sharp fa-solid fa-star" style={{color: '#FFD700'}}></i>
+                                 <span className="title" style={{
+                                    color: '#ffffff',
+                                    opacity: 1,
+                                    textShadow: 'none'
+                                 }}>5.0</span>
                               </div>
                            </div>
                         </div>

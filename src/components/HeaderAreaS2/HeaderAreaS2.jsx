@@ -81,68 +81,67 @@ const HeaderAreaS2 = (props) => {
             <div className={`sticky-wrapper ${isSticky ? 'sticky' : ''}`}>
                <div className="menu-area">
                   <div className="container-fluid">
-                     <div className="row align-items-center justify-content-between">
+                     <div className="row align-items-center justify-content-center">
                         <div className="col-auto">
-                           <div className="header-wrapp">
-                              <div className="header-button">
-                                 <Link to="#" className="simple-btn sideMenuToggler" onClick={toggleMenu}><i className="fa-sharp-duotone fa-light fa-bars"></i><span className="menu">MENU</span></Link>
-                              </div>
-                              <nav className="main-menu d-none d-xl-block">
-                                 <ul>
-                                    <li className="menu-item-has-children">
-                                       <Link onClick={ClickHandler} to="#">ROOMS</Link>
-                                       <ul className="mega-menu style2 mega-menu-content allow-natural-scroll">
-                                          <li>
-                                             <div className="container">
-                                                <div className="row gy-4">
-                                                   <div className="col-lg-4">
-                                                      <div className="mega-menu-box style2">
-                                                         <div className="mega-menu-img">
-                                                            <img src={room1} alt="Home One" />
+                           <nav className="main-menu d-none d-xl-block">
+                              <ul>
+                                 <li className="menu-item-has-children">
+                                    <Link onClick={ClickHandler} to="#">ROOMS</Link>
+                                    <ul className="mega-menu style2 mega-menu-content allow-natural-scroll">
+                                       <li>
+                                          <div className="container">
+                                             <div className="row gy-4">
+                                                <div className="col-lg-4">
+                                                   <div className="mega-menu-box style2">
+                                                      <div className="mega-menu-img">
+                                                         <img src={room1} alt="Home One" />
 
-                                                         </div>
-                                                         <h3 className="mega-menu-title"><Link onClick={ClickHandler} to="/room">Single Room</Link></h3>
-                                                        
                                                       </div>
-                                                   </div>
-                                                   <div className="col-lg-4">
-                                                      <div className="mega-menu-box style2">
-                                                         <div className="mega-menu-img">
-                                                            <img src={room2} alt="Home One" />
-                                                         </div>
-                                                         <h3 className="mega-menu-title"><Link onClick={ClickHandler} to="/room">Grand Luxury Room</Link></h3>
-                                                         
-                                                      </div>
-                                                   </div>
-                                                   <div className="col-lg-4">
-                                                      <div className="mega-menu-box style2">
-                                                         <div className="mega-menu-img">
-                                                            <img src={room3} alt="Home One" />
-
-                                                         </div>
-                                                         <h3 className="mega-menu-title"><Link onClick={ClickHandler} to="/room">Cozy Room</Link></h3>
+                                                      <h3 className="mega-menu-title"><Link onClick={ClickHandler} to="/room">Single Room</Link></h3>
                                                      
-                                                      </div>
                                                    </div>
                                                 </div>
-                                               
+                                                <div className="col-lg-4">
+                                                   <div className="mega-menu-box style2">
+                                                      <div className="mega-menu-img">
+                                                         <img src={room2} alt="Home One" />
+                                                      </div>
+                                                      <h3 className="mega-menu-title"><Link onClick={ClickHandler} to="/room">Grand Luxury Room</Link></h3>
+                                                      
+                                                   </div>
+                                                </div>
+                                                <div className="col-lg-4">
+                                                   <div className="mega-menu-box style2">
+                                                      <div className="mega-menu-img">
+                                                         <img src={room3} alt="Home One" />
+
+                                                      </div>
+                                                      <h3 className="mega-menu-title"><Link onClick={ClickHandler} to="/room">Cozy Room</Link></h3>
+                                                  
+                                                   </div>
+                                                </div>
                                              </div>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                 </ul>
-                              </nav>
-                           </div>
+                                            
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </nav>
                         </div>
                         <div className="col-auto">
-                           <div className="header-logo" style={{ padding: '10px 0' }}>
+                           <div className="header-logo" style={{ 
+                              padding: '10px 18px',
+                              marginLeft: 'clamp(20px, 8vw, 150px)',
+                              marginRight: 'clamp(20px, 5vw, 100px)'
+                           }}>
                               <Link onClick={ClickHandler} to="/" style={{ display: 'block', height: '100%' }}>
                                  <img 
                                     src={Logo} 
                                     alt="MJ Hotel & Resort" 
                                     style={{
                                        maxHeight: '120px',
-                                       height: '120px',
+                                       height: 'clamp(80px, 12vw, 120px)',
                                        width: 'auto',
                                        objectFit: 'contain',
                                        display: 'block',

@@ -63,7 +63,7 @@ const PackageArea = (props) => {
                <div className="col-xl-6">
                   <div className="title-area text-center text-lg-start">
                      <span className="sub-title2 style1">HOTEL SERVICES</span>
-                     <h2 className="sec-title text-white">Premium Services At <span> MJ Hotel Dhanbad</span></h2>
+                     <h2 className="sec-title text-dark">Premium Services At <span> MJ Hotel Dhanbad</span></h2>
                   </div>
                </div>
                {/* <div className="col-md-auto">

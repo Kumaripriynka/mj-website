@@ -25,7 +25,7 @@ const HomePageS3 = () => {
          <div className="home-city-hotel" style={{ backgroundColor: "#112E2E" }}>
             <HeaderAreaS2 hclass={'th-header header-layout3'} RoomBtn={true} />
             <HeroAreaS3 />
-            <BookingAreaS4 hclass={'booking-area style2'} />
+            {/* <BookingAreaS4 hclass={'booking-area style2'} /> */}
             <ColorScheme />
             <OfferAreaS4 hclass={'offer-area4 position-relative overflow-hidden space-top'} />
             <AboutAreaS5 hclass={'overflow-hidden space '} />
