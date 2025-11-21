@@ -14,8 +14,7 @@ import left from '../../img/icon/hero-arrow-left.svg';
 import right from '../../img/icon/hero-arrow-right.svg';
 import room from '../../img/room/room-view.jpg';
 import map from '../../img/shape/map.png';
-import CircleTextS2 from '../CircleTextS2/CircleTextS2';
-import VideoModal from '../ModalVideo/ModalVideo';
+
 import ScrollLink from '../ScrollLink/ScrollLink';
 
 const slides = [
@@ -118,10 +117,10 @@ const HeroSlider = () => {
                         <div className="container">
                            <div className="hero-style3">
                               <div className="hero-wrapp" >
-                                 <div className="discount-wrapp">
+                                 {/* <div className="discount-wrapp">
                                     <VideoModal vidclass={'play-btn popup-video'} />
                                     <CircleTextS2 text="MJ hotel launching soon* MJ hotel launching soon*" />
-                                 </div>
+                                 </div> */}
                               </div>
                               <h1 className="hero-title" data-ani="slideinup" data-ani-delay="0.6s">
                                  {bg.title}

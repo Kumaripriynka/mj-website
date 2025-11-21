@@ -28,7 +28,7 @@ const amenities = [
       image: image2,
    },
    {
-      title: 'Zym Center',
+      title: 'gym Center',
       icon: icon3,
       image: image3,
    },
@@ -72,7 +72,7 @@ const HotelAreaS2 = (props) => {
                <div className="col-lg-5">
                   <div className="title-area text-center space">
                      <span className="sub-title2">HOTEL AMENITIES</span>
-                     <h2 className="sec-title">Premium Facilities at MJ Hotel</h2>
+                     <h2 className="sec-title ">Premium Facilities at MJ Hotel</h2>
                      <p className="fs-18 mt-30 ">
                         MJ Hotel Dhanbad offers world-class amenities designed for both business and leisure travelers. 
                         Experience luxury and comfort with our state-of-the-art facilities and exceptional services 
