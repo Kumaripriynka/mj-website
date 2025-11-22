@@ -131,20 +131,23 @@ const HeaderAreaS2 = (props) => {
                         </div>
                         <div className="col-auto">
                            <div className="header-logo" style={{ 
-                              padding: '10px 18px',
-                              marginLeft: 'clamp(20px, 8vw, 150px)',
-                              marginRight: 'clamp(20px, 5vw, 100px)'
+                              padding: '10px 0',
+                              marginLeft: '300px',
+                              display: 'flex',
+                              justifyContent: 'center',
+                              alignItems: 'center'
                            }}>
-                              <Link onClick={ClickHandler} to="/" style={{ display: 'block', height: '100%' }}>
+                              <Link onClick={ClickHandler} to="/" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
                                  <img 
                                     src={Logo} 
                                     alt="MJ Hotel & Resort" 
                                     style={{
-                                       maxHeight: '120px',
-                                       height: 'clamp(80px, 12vw, 120px)',
+                                       maxHeight: '140px',
+                                       height: '140px',
                                        width: 'auto',
                                        objectFit: 'contain',
                                        display: 'block',
+                                       margin: '0 auto',
                                        transition: 'all 0.3s ease'
                                     }} 
                                  />

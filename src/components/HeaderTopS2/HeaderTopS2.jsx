@@ -12,7 +12,7 @@ const HeaderTopS2 = (props) => {
                <div className="col-auto">
                   <div className="header-links">
                      <ul>
-                        <li><i className="fas fa-location"></i> K.G Ashram,Jailgarha,Grand Trunk Rd, Gobindpur,Dhanbad </li>
+                        <li><i className="fas fa-location"></i> K.G Ashram, Jailgarha, NH-2, Grand Trunk Rd, Gobindpur, Dhanbad, Jharkhand </li>
                      </ul>
                   </div>
                </div>
@@ -20,7 +20,7 @@ const HeaderTopS2 = (props) => {
                   <div className="header-links">
                      <ul>
                         <li className="d-none d-md-inline-block"><i className="fa-sharp fa-solid fa-phone"></i>8228045049</li>
-                        <li className="d-none d-md-inline-block"><i className="fa-sharp fa-solid fa-mailbox"></i><Link onClick={ClickHandler} to="/contact">gm@mjhotelandresorts.com</Link></li>
+                        <li className="d-none d-md-inline-block"><i className="fa-sharp fa-solid fa-mailbox"></i><a href="mailto:gm@mjhotelandresorts.com">gm@mjhotelandresorts.com</a></li>
                     
                         <li>
                            {/* <div className="dropdown-link">

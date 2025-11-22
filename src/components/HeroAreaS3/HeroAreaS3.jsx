@@ -122,6 +122,27 @@ const HeroSlider = () => {
                                     <CircleTextS2 text="MJ hotel launching soon* MJ hotel launching soon*" />
                                  </div> */}
                               </div>
+                              <div className="hero-category" data-ani="slideinup" data-ani-delay="0.5s" style={{
+                                 display: 'inline-block',
+                                 marginBottom: '25px'
+                              }}>
+                                 <span style={{ 
+                                    background: 'rgba(194, 145, 61, 0.15)',
+                                    border: '2px solid #C2913D',
+                                    color: '#C2913D',
+                                    padding: '8px 20px',
+                                    borderRadius: '30px',
+                                    fontWeight: '700',
+                                    fontSize: '16px',
+                                    letterSpacing: '1px',
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '8px'
+                                 }}>
+                                    <span style={{ fontSize: '20px' }}>★★★★</span>
+                                    <span>4-STAR HOTEL</span>
+                                 </span>
+                              </div>
                               <h1 className="hero-title" data-ani="slideinup" data-ani-delay="0.6s">
                                  {bg.title}
                               </h1>

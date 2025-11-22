@@ -38,30 +38,36 @@ const AboutAreaS5 = (props) => {
                           <span className="sub-title2 style1">ABOUT MJ HOTEL</span>
                           <h2 className="sec-title">Welcome To MJ Hotel <span>Luxury Awaits in The Heart of Dhanbad</span></h2>
                       </div>
-                      <p className="extra-text text-body fs-18 mb-0">Located at Post-K.G Ashram, Jailgarha, NH-2, Grand Trunk Road in Gobindpur, Dhanbad, MJ Hotel is set to become the new benchmark of luxury hospitality in Jharkhand. We are creating an exclusive retreat that combines modern elegance with warm Indian hospitality.</p>
-                      <p className="extra-text text-body fs-18 mb-50">MJ Hotel will feature contemporary architecture with state-of-the-art amenities, offering guests a perfect blend of comfort and sophistication. Our strategic location on the historic Grand Trunk Road provides excellent connectivity while maintaining a peaceful atmosphere for our valued guests.</p>
+                      <p className="extra-text text-body fs-18 mb-0">Located at Post-K.G Ashram, Jailgarha, NH-2, Grand Trunk Road in Gobindpur, Dhanbad, MJ Hotel & Resort is a premier 4-star luxury destination featuring 66 elegantly designed rooms. We combine modern elegance with warm Indian hospitality to create an unforgettable experience.</p>
+                      <p className="extra-text text-body fs-18 mb-30">Our world-class amenities include a swimming pool, 2 pillar-less banquets, a sprawling 32,000 sqft open lawn, fully-equipped gym, and upcoming SPA and Rooftop Lounge Bar. Our strategic location on the historic Grand Trunk Road provides excellent connectivity while maintaining a peaceful atmosphere.</p>
+                      
+                      <div className="mb-40">
+                          <h4 className="mb-2" style={{ color: '#C2913D', fontSize: '18px', fontWeight: '600' }}>Our Mission</h4>
+                          <p className="text-body fs-16 mb-3">To provide exceptional hospitality experiences that exceed expectations, creating memorable moments for every guest through personalized service, modern amenities, and warm Indian hospitality.</p>
+                          
+                          <h4 className="mb-2" style={{ color: '#C2913D', fontSize: '18px', fontWeight: '600' }}>Our Vision</h4>
+                          <p className="text-body fs-16 mb-0">To be the most preferred luxury hotel destination in Jharkhand, setting new standards in hospitality excellence and becoming the first choice for both business and leisure travelers.</p>
+                      </div>
 
                       <div className="counter-card-wrap style2">
                           <div className="counter-card">
                               <div className="media-body">
-                                  <h2 className="box-number"><span className="counter-number"><CountUp end={20}></CountUp></span>+ </h2>
+                                  <h2 className="box-number"><span className="counter-number"><CountUp end={66}></CountUp></span></h2>
                                   <p className="box-text">Luxury Rooms</p>
                               </div>
                           </div>
-                          {/* <div className="divider style2"></div> */}
-                          {/* <div className="counter-card">
-                              <div className="media-body">
-                                  <h2 className="box-number"><span className="counter-number">
-                                  <CountUp end={5}></CountUp>.<CountUp end={0}></CountUp>
-                                    </span>+ </h2>
-                                  <p className="box-text">Star Rating</p>
-                              </div>
-                          </div> */}
                           <div className="divider style2"></div>
                           <div className="counter-card">
                               <div className="media-body">
-                                  <h2 className="box-number"><span className="counter-number"><CountUp end={3}></CountUp></span>+ </h2>
-                                  <p className="box-text">Dining Options</p>
+                                  <h2 className="box-number"><span className="counter-number"><CountUp end={4}></CountUp></span><span style={{ fontSize: '24px' }}>★</span></h2>
+                                  <p className="box-text">Star Rating</p>
+                              </div>
+                          </div>
+                          <div className="divider style2"></div>
+                          <div className="counter-card">
+                              <div className="media-body">
+                                  <h2 className="box-number"><span className="counter-number"><CountUp end={32000}></CountUp></span></h2>
+                                  <p className="box-text">Sqft Open Lawn</p>
                               </div>
                           </div>
                           <div className="divider style2"></div>

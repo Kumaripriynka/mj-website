@@ -1,0 +1,261 @@
+/* FooterAreaS3 Responsive Styles */
+
+/* Desktop - Default styles are in JSX */
+
+/* Large tablets and small desktops (992px - 1199px) */
+@media (max-width: 1199px) {
+  .footer-wrapper .widget_title {
+    font-size: 17px !important;
+  }
+  
+  .footer-wrapper .about-logo img {
+    max-width: 140px !important;
+  }
+  
+  .footer-wrapper .about-text {
+    font-size: 15px !important;
+  }
+  
+  .footer-wrapper .menu a,
+  .footer-wrapper .box-text,
+  .footer-wrapper .box-link {
+    font-size: 14px !important;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+  .footer-wrapper .widget-area {
+    padding: 30px 0 !important;
+  }
+  
+  .footer-wrapper .social-area {
+    margin-bottom: 40px !important;
+  }
+  
+  .footer-wrapper .widget_title {
+    font-size: 16px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .footer-wrapper .about-logo {
+    margin-bottom: 20px !important;
+  }
+  
+  .footer-wrapper .about-logo img {
+    max-width: 130px !important;
+  }
+  
+  .footer-wrapper .menu li {
+    margin-bottom: 15px !important;
+  }
+  
+  .footer-wrapper .info-box {
+    margin-bottom: 15px !important;
+  }
+  
+  /* Adjust column padding for tablets */
+  .footer-wrapper .row > div {
+    padding: 0 15px !important;
+  }
+  
+  .footer-wrapper .footer-line {
+    padding-right: 15px !important;
+  }
+}
+
+/* Mobile landscape and small tablets (576px - 767px) */
+@media (max-width: 767px) {
+  .footer-wrapper {
+    padding: 40px 0 0 0 !important;
+  }
+  
+  .footer-wrapper .social-area {
+    margin-bottom: 30px !important;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .footer-wrapper .social-link {
+    flex: 0 0 calc(50% - 5px);
+    margin: 0 !important;
+  }
+  
+  .footer-wrapper .widget-area {
+    padding: 20px 0 !important;
+  }
+  
+  .footer-wrapper .row {
+    margin: 0 -10px !important;
+  }
+  
+  .footer-wrapper .row > div {
+    padding: 0 10px !important;
+    margin-bottom: 30px;
+  }
+  
+  .footer-wrapper .widget_title {
+    font-size: 16px !important;
+    margin-bottom: 18px !important;
+    min-height: auto !important;
+  }
+  
+  .footer-wrapper .about-logo {
+    margin-bottom: 18px !important;
+    min-height: auto !important;
+  }
+  
+  .footer-wrapper .about-logo img {
+    max-width: 120px !important;
+  }
+  
+  .footer-wrapper .about-text {
+    font-size: 14px !important;
+  }
+  
+  .footer-wrapper .menu a,
+  .footer-wrapper .box-text,
+  .footer-wrapper .box-link {
+    font-size: 13px !important;
+  }
+  
+  .footer-wrapper .menu li {
+    margin-bottom: 12px !important;
+  }
+  
+  .footer-wrapper .info-box {
+    margin-bottom: 12px !important;
+  }
+  
+  .footer-wrapper .footer-line {
+    padding-right: 0 !important;
+  }
+  
+  .footer-wrapper .copyright-wrap {
+    padding: 20px 0 !important;
+    margin-top: 30px !important;
+  }
+  
+  /* Remove flex stretch on mobile for natural heights */
+  .footer-wrapper .row {
+    align-items: flex-start !important;
+  }
+  
+  .footer-wrapper .menu-all-pages-container,
+  .footer-wrapper .menu {
+    flex: none !important;
+    display: block !important;
+  }
+}
+
+/* Mobile portrait (320px - 575px) */
+@media (max-width: 575px) {
+  .footer-wrapper {
+    padding: 30px 0 0 0 !important;
+  }
+  
+  .footer-wrapper .container {
+    padding: 0 15px !important;
+  }
+  
+  .footer-wrapper .social-area {
+    margin-bottom: 25px !important;
+  }
+  
+  .footer-wrapper .social-link {
+    flex: 0 0 100%;
+  }
+  
+  .footer-wrapper .social-link a {
+    justify-content: center;
+  }
+  
+  .footer-wrapper .widget-area {
+    padding: 15px 0 !important;
+  }
+  
+  .footer-wrapper .row > div {
+    margin-bottom: 25px;
+  }
+  
+  .footer-wrapper .widget_title {
+    font-size: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .footer-wrapper .about-logo {
+    margin-bottom: 15px !important;
+    justify-content: center !important;
+  }
+  
+  .footer-wrapper .about-logo img {
+    max-width: 110px !important;
+  }
+  
+  .footer-wrapper .about-text {
+    font-size: 13px !important;
+    text-align: center;
+  }
+  
+  .footer-wrapper .menu a,
+  .footer-wrapper .box-text,
+  .footer-wrapper .box-link {
+    font-size: 13px !important;
+  }
+  
+  .footer-wrapper .menu li {
+    margin-bottom: 10px !important;
+  }
+  
+  .footer-wrapper .info-box {
+    margin-bottom: 10px !important;
+  }
+  
+  .footer-wrapper .box-icon {
+    margin-right: 10px !important;
+  }
+  
+  .footer-wrapper .copyright-wrap {
+    padding: 15px 0 !important;
+    margin-top: 20px !important;
+  }
+  
+  .footer-wrapper .copyright-text {
+    font-size: 12px !important;
+  }
+}
+
+/* Extra small devices (max-width: 374px) */
+@media (max-width: 374px) {
+  .footer-wrapper .about-logo img {
+    max-width: 100px !important;
+  }
+  
+  .footer-wrapper .widget_title {
+    font-size: 14px !important;
+  }
+  
+  .footer-wrapper .menu a,
+  .footer-wrapper .box-text,
+  .footer-wrapper .box-link {
+    font-size: 12px !important;
+  }
+  
+  .footer-wrapper .about-text {
+    font-size: 12px !important;
+  }
+}
+
+/* Ensure phone numbers stay on same line on all devices */
+@media (min-width: 768px) {
+  .footer-wrapper .box-text span {
+    white-space: nowrap;
+  }
+}
+
+/* For very small screens, allow wrapping if needed */
+@media (max-width: 374px) {
+  .footer-wrapper .box-text a {
+    font-size: 11px !important;
+  }
+}
