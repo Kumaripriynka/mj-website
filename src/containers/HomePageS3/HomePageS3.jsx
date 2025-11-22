@@ -16,6 +16,7 @@ import OfferAreaS4 from '../../components/OfferAreaS4/OfferAreaS4';
 import PackageArea from '../../components/PackageArea/PackageArea';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
 import TestimonialAreaS3 from '../../components/TestimonialAreaS3/TestimonialAreaS3';
+import NearbyAttractions from '../../components/NearbyAttractions/NearbyAttractions';
 
 
 const HomePageS3 = () => {
@@ -34,6 +35,7 @@ const HomePageS3 = () => {
             <MarqueeArea hclass={'marquee-area space-top overflow-hidden'} />
             <EventArea hclass={'space-extra2-top space-bottom overflow-hidden'} />
             <TestimonialAreaS3 hclass={'overflow-hidden space bg-light3'} />
+            <NearbyAttractions hclass={'space overflow-hidden'} />
             <GalleryAreaS3 hclass={'position-relative overflow-hidden space-top background-image'} />
             {/* <BrandAreaS3 hclass={'space overflow-hidden'} sclass={'brand-area3 space-extra2'} /> */}
             <BookingAreaS3 hclass={'booking-area3 bg-fixed space'} />

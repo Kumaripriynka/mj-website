@@ -10,7 +10,7 @@ import icon5 from '../../img/icon/hotel_1_5.svg';
 import icon6 from '../../img/icon/hotel_1_6.svg';
 import icon7 from '../../img/icon/hotel_1_7.svg';
 
-import image1 from '../../img/hotel/parking.png';
+import image1 from '../../img/gallery/galery_1.png';
 import image2 from '../../img/pages/delux.png';
 import image3 from '../../img/hotel/zym.png';
 import image4 from '../../img/package/luxuary.png';
@@ -21,37 +21,35 @@ import image7 from '../../img/package/swim.png';
 
 
 const amenities = [
-   
-   {
-      title: 'High-Speed WiFi',
-      icon: icon2,
-      image: image2,
-   },
-   {
-      title: 'gym Center',
-      icon: icon3,
-      image: image3,
-   },
-   {
-      title: '24/7 Room Service',
-      icon: icon4,
-      image: image4,
-   },
-  
-   {
-      title: 'Multi-Cuisine Restaurant',
-      icon: icon6,
-      image: image6,
-   },
    {
       title: 'Swimming Pool',
       icon: icon7,
       image: image7,
    },
    {
-      title: 'Secure Parking',
+      title: '2 Pillar-less Banquets',
       icon: icon1,
       image: image1,
+   },
+   {
+      title: '32,000 Sqft Open Lawn',
+      icon: icon4,
+      image: image4,
+   },
+   {
+      title: 'Fully-Equipped Gym',
+      icon: icon3,
+      image: image3,
+   },
+   {
+      title: 'SPA (Proposed)',
+      icon: icon5,
+      image: image2,
+   },
+   {
+      title: 'Rooftop Lounge Bar (Proposed)',
+      icon: icon6,
+      image: image6,
    },
 ];
 
@@ -74,9 +72,9 @@ const HotelAreaS2 = (props) => {
                      <span className="sub-title2">HOTEL AMENITIES</span>
                      <h2 className="sec-title ">Premium Facilities at MJ Hotel</h2>
                      <p className="fs-18 mt-30 ">
-                        MJ Hotel Dhanbad offers world-class amenities designed for both business and leisure travelers. 
-                        Experience luxury and comfort with our state-of-the-art facilities and exceptional services 
-                        that cater to your every need in the heart of Jharkhand.
+                        MJ Hotel & Resort offers world-class amenities including a swimming pool, 2 pillar-less banquets, 
+                        32,000 sqft open lawn, fully-equipped gym, and upcoming SPA and Rooftop Lounge Bar. 
+                        Experience luxury and comfort with our state-of-the-art facilities designed for both business and leisure travelers.
                      </p>
                   </div>
                </div>
