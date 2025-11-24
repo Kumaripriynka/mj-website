@@ -99,8 +99,8 @@ const FooterAreaS3 = (props) => {
                               <li style={{ marginBottom: '18px' }}><Link onClick={ClickHandler} to="#" style={{ textDecoration: 'none', fontSize: '15px' }}>About Us</Link></li>
                               <li style={{ marginBottom: '18px' }}><Link onClick={ClickHandler} to="#" style={{ textDecoration: 'none', fontSize: '15px' }}>Featured Rooms</Link></li>
                               <li style={{ marginBottom: '18px' }}><Link onClick={ClickHandler} to="#" style={{ textDecoration: 'none', fontSize: '15px' }}>Our Best Services</Link></li>
-                              <li style={{ marginBottom: '18px' }}><Link onClick={ClickHandler} to="#" style={{ textDecoration: 'none', fontSize: '15px' }}>Contact Us</Link></li>
-                              <li style={{ marginBottom: '0' }}><Link onClick={ClickHandler} to="#" style={{ textDecoration: 'none', fontSize: '15px' }}>Request Booking</Link></li>
+                              <li style={{ marginBottom: '18px' }}><Link onClick={ClickHandler} to="/contact" style={{ textDecoration: 'none', fontSize: '15px' }}>Contact Us</Link></li>
+                              <li style={{ marginBottom: '0' }}><Link onClick={ClickHandler} to="/contact" style={{ textDecoration: 'none', fontSize: '15px' }}>Request Booking</Link></li>
                            </ul>
                         </div>
                      </div>
@@ -157,13 +157,13 @@ const FooterAreaS3 = (props) => {
                               <p className="box-text" style={{ margin: 0, lineHeight: '1.6' }}>
                                  <span style={{ display: 'block', fontWeight: '600', marginBottom: '2px', fontSize: '13px' }}>Reception:</span>
                                  <span style={{ display: 'block', marginBottom: '10px' }}>
-                                    <a href="tel:9296913101" className="box-link" style={{ textDecoration: 'none', fontSize: '14px', marginRight: '8px' }}>9296913101,</a>
-                                    <a href="tel:9296913102" className="box-link" style={{ textDecoration: 'none', fontSize: '14px' }}>9296913102</a>
+                                    <Link onClick={ClickHandler} to="/contact" className="box-link" style={{ textDecoration: 'none', fontSize: '14px', marginRight: '8px' }}>9296913101,</Link>
+                                    <Link onClick={ClickHandler} to="/contact" className="box-link" style={{ textDecoration: 'none', fontSize: '14px' }}>9296913102</Link>
                                  </span>
                                  <span style={{ display: 'block', fontWeight: '600', marginBottom: '2px', fontSize: '13px' }}>Event Booking:</span>
                                  <span style={{ display: 'block' }}>
-                                    <a href="tel:9296913100" className="box-link" style={{ textDecoration: 'none', fontSize: '14px', marginRight: '8px' }}>9296913100,</a>
-                                    <a href="tel:9296913103" className="box-link" style={{ textDecoration: 'none', fontSize: '14px' }}>9296913103</a>
+                                    <Link onClick={ClickHandler} to="/contact" className="box-link" style={{ textDecoration: 'none', fontSize: '14px', marginRight: '8px' }}>9296913100,</Link>
+                                    <Link onClick={ClickHandler} to="/contact" className="box-link" style={{ textDecoration: 'none', fontSize: '14px' }}>9296913103</Link>
                                  </span>
                               </p>
                            </div>
@@ -172,9 +172,9 @@ const FooterAreaS3 = (props) => {
                                  <i className="fal fa-envelope"></i>
                               </div>
                               <p className="box-text" style={{ margin: 0, lineHeight: '1.6' }}>
-                                 <a href="mailto:fo@mjhotelandresorts.com" className="box-link" style={{ textDecoration: 'none', display: 'block', marginBottom: '5px', fontSize: '14px' }}>fo@mjhotelandresorts.com</a>
-                                 <a href="mailto:gm@mjhotelandresorts.com" className="box-link" style={{ textDecoration: 'none', display: 'block', marginBottom: '5px', fontSize: '14px' }}>gm@mjhotelandresorts.com</a>
-                                 <a href="mailto:info@mjhotelandresorts.com" className="box-link" style={{ textDecoration: 'none', display: 'block', fontSize: '14px' }}>info@mjhotelandresorts.com</a>
+                                 <Link onClick={ClickHandler} to="/contact" className="box-link" style={{ textDecoration: 'none', display: 'block', marginBottom: '5px', fontSize: '14px' }}>fo@mjhotelandresorts.com</Link>
+                                 <Link onClick={ClickHandler} to="/contact" className="box-link" style={{ textDecoration: 'none', display: 'block', marginBottom: '5px', fontSize: '14px' }}>gm@mjhotelandresorts.com</Link>
+                                 <Link onClick={ClickHandler} to="/contact" className="box-link" style={{ textDecoration: 'none', display: 'block', fontSize: '14px' }}>info@mjhotelandresorts.com</Link>
                               </p>
                            </div>
                         </div>

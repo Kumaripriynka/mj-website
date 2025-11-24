@@ -1,0 +1,48 @@
+/* Hero Area Custom Styles */
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 25px rgba(194, 145, 61, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(194, 145, 61, 0.6);
+  }
+}
+
+/* Responsive adjustments for hero announcement */
+@media (max-width: 767px) {
+  .hero-announcement > div {
+    padding: 15px 25px !important;
+    gap: 12px !important;
+  }
+  
+  .hero-announcement span {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 18px !important;
+  }
+  
+  .hero-announcement > div > div > div:first-child {
+    font-size: 18px !important;
+  }
+  
+  .hero-announcement > div > div > div:last-child {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-announcement > div {
+    padding: 12px 20px !important;
+  }
+  
+  .hero-announcement > div > div > div:first-child {
+    font-size: 16px !important;
+  }
+  
+  .hero-announcement > div > div > div:last-child {
+    font-size: 12px !important;
+  }
+}

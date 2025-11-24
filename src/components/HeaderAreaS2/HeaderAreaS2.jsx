@@ -128,10 +128,30 @@ const HeaderAreaS2 = (props) => {
                                  </li>
                               </ul>
                            </nav>
+                           <button 
+                              className="th-menu-toggle d-xl-none"
+                              onClick={toggleMenu}
+                              style={{
+                                 background: 'var(--theme-color)',
+                                 border: 'none',
+                                 color: '#fff',
+                                 padding: '12px 20px',
+                                 borderRadius: '5px',
+                                 cursor: 'pointer',
+                                 fontSize: '18px',
+                                 transition: 'all 0.3s ease',
+                                 display: 'flex',
+                                 alignItems: 'center',
+                                 gap: '8px'
+                              }}
+                           >
+                              <i className="far fa-bars"></i>
+                              <span style={{ fontSize: '14px', fontWeight: '600' }}></span>
+                           </button>
                         </div>
                         <div className="col-auto">
                            <div className="header-logo" style={{ 
-                              padding: '10px 0',
+                              padding: '5px 0',
                               marginLeft: '300px',
                               display: 'flex',
                               justifyContent: 'center',
@@ -156,104 +176,23 @@ const HeaderAreaS2 = (props) => {
                            </div>
                         </div>
                         <div className="col-4-lg col-xl-4">
-                           <div className="header-wrapp">
-                              {/* <nav className="main-menu style3 d-none d-xl-block">
-                                 <ul>
-                                    <li className="menu-item-has-children">
-                                       <Link onClick={ClickHandler} to="#">HOTEL</Link>
-                                       <ul className="mega-menu style3 mega-menu-content allow-natural-scroll">
-                                          <li>
-                                             <div className="container">
-                                                <div className="row gy-4">
-                                                   <div className="col-lg-4">
-                                                      <div className="mega-menu-box style3">
-                                                         <div className="box-content">
-                                                            <div className="logo">
-                                                               <img src={Logo} alt="Home One" />
-                                                            </div>
-                                                            <h3 className="mega-menu-title"><Link onClick={ClickHandler} to="/about">The Hotel</Link></h3>
-                                                            <p className="price">Booking Start at $290</p>
-
-                                                         </div>
-                                                         <Link onClick={ClickHandler} className="icon-btn" to="/about"><img src={right} alt="" /></Link>
-                                                      </div>
-                                                      <div className="mega-card">
-                                                         <div className="mega-wrapp">
-                                                            <div className="box-img"><img src={card1} alt="" /></div>
-                                                            <h3 className="box-title"><Link onClick={ClickHandler} to="/service-details/1">Restaurant</Link></h3>
-                                                         </div>
-                                                         <Link onClick={ClickHandler} to="/service-details/1"><img src={right} alt="" /></Link>
-                                                      </div>
-                                                      <div className="mega-card">
-                                                         <div className="mega-wrapp">
-                                                            <div className="box-img"><img src={card2} alt="" /></div>
-                                                            <h3 className="box-title"><Link onClick={ClickHandler} to="/equipment">Equipments</Link></h3>
-                                                         </div>
-                                                         <Link onClick={ClickHandler} to="/equipment"><img src={right} alt="" /></Link>
-                                                      </div>
-                                                   </div>
-                                                   <div className="col-lg-4">
-                                                      <div className="mega-menu-box style3">
-                                                         <div className="box-content">
-                                                            <div className="logo">
-                                                               <img src={Logo} alt="Home One" />
-                                                            </div>
-                                                            <h3 className="mega-menu-title"><Link onClick={ClickHandler} to="/service-details/1">Wellness</Link></h3>
-                                                            <p className="price">Booking Start at $270</p>
-                                                         </div>
-                                                         <Link onClick={ClickHandler} className="icon-btn" to="/service-details/1"><img src={right} alt="" /></Link>
-                                                      </div>
-                                                      <div className="mega-card">
-                                                         <div className="mega-wrapp">
-                                                            <div className="box-img"><img src={card3} alt="" /></div>
-                                                            <h3 className="box-title"><Link onClick={ClickHandler} to="/package">Packages</Link></h3>
-                                                         </div>
-                                                         <Link onClick={ClickHandler} to="/package"><img src={right} alt="" /></Link>
-                                                      </div>
-                                                      <div className="mega-card">
-                                                         <div className="mega-wrapp">
-                                                            <div className="box-img"><img src={card4} alt="" /></div>
-                                                            <h3 className="box-title"><Link onClick={ClickHandler} to="/event">Events</Link></h3>
-                                                         </div>
-                                                         <Link onClick={ClickHandler} to="/event"><img src={right} alt="" /></Link>
-                                                      </div>
-                                                   </div>
-                                                   <div className="col-lg-4">
-                                                      <div className="mega-menu-box style3">
-                                                         <div className="box-content">
-                                                            <div className="logo">
-                                                               <img src={Logo} alt="Home One" />
-                                                            </div>
-                                                            <h3 className="mega-menu-title"><Link onClick={ClickHandler} to="/service">Services</Link></h3>
-                                                            <p className="price">Price Start at $370</p>
-                                                         </div>
-                                                         <Link onClick={ClickHandler} className="icon-btn" to="/service"><img src={right} alt="" /></Link>
-                                                      </div>
-                                                      <div className="mega-card">
-                                                         <div className="mega-wrapp">
-                                                            <div className="box-img"><img src={card5} alt="" /></div>
-                                                            <h3 className="box-title"><Link onClick={ClickHandler} to="/review">Reviews</Link></h3>
-                                                         </div>
-                                                         <Link onClick={ClickHandler} to="/review"><img src={right} alt="" /></Link>
-                                                      </div>
-                                                      <div className="mega-card">
-                                                         <div className="mega-wrapp">
-                                                            <div className="box-img"><img src={card6} alt="" /></div>
-                                                            <h3 className="box-title"><Link onClick={ClickHandler} to="/blog">Blog</Link></h3>
-                                                         </div>
-                                                         <Link onClick={ClickHandler} to="/blog"><img src={right} alt="" /></Link>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                 </ul>
-                              </nav> */}
-                              {/* <Link onClick={ClickHandler} to="/contact" className="th-btn booking">BOOKING <img src={bed} alt="" /></Link> */}
+                           <div className="header-wrapp" style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+                              <Link 
+                                 onClick={ClickHandler} 
+                                 to="/contact" 
+                                 className="th-btn contact-btn-header d-none d-xl-inline-block"
+                                 style={{ 
+                                    textDecoration: 'none',
+                                    padding: '12px 30px',
+                                    fontSize: '14px',
+                                    fontWeight: '600',
+                                    letterSpacing: '1px',
+                                    whiteSpace: 'nowrap'
+                                 }}
+                              >
+                                 CONTACT US
+                              </Link>
                            </div>
-
                         </div>
                      </div>
                   </div>
@@ -288,6 +227,9 @@ const HeaderAreaS2 = (props) => {
                      <ul>
                         <li>
                            <Link to="/home-3" onClick={closeMenu}>Home</Link>
+                        </li>
+                        <li>
+                           <Link to="/contact" onClick={closeMenu}>Contact Us</Link>
                         </li>
                         {/* <li className={`menu-item-has-children ${openSubMenus['pages'] ? 'open' : ''}`}>
                            <Link to="#" onClick={(e) => { e.preventDefault(); toggleSubMenu('pages'); }}>Pages</Link>

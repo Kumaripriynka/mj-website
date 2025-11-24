@@ -71,7 +71,7 @@ const App = () => {
                   <Route element={<BlogGridPage />} path="blog-grid" />
                   <Route element={<BlogDetailsPage />} path='blog-details/:slug' />
                   <Route element={<BlogDetailSidebarPage />} path='blog-details-right-sidebar/:slug' /> */}
-                  {/* <Route element={<ContactPage />} path='contact' /> */}
+                  <Route element={<ContactPage />} path='contact' />
                   {/* <Route element={<ErrorPage />} path="error" /> */}
                </Routes>
             </BrowserRouter>
