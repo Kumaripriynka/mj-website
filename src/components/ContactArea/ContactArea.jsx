@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import SimpleReactValidator from "simple-react-validator";
-import contactimg from '../../img/normal/contact-img.jpg';
+import contactimg from '../../img/bg/booking_bg.png';
 
 const ContactArea = () => {
    const [formData, setFormData] = useState({
@@ -44,10 +44,10 @@ const ContactArea = () => {
    return (
       <div className="space">
          <div className="container">
-            <div className="row gx-0">
-               <div className="col-xl-6">
+            <div className="row gx-0 gx-md-3">
+               <div className="col-lg-6">
                   <form onSubmit={handleSubmit} className="contact-form">
-                     <div className="title-area mb-45 text-center text-lg-start">
+                     <div className="title-area mb-30 mb-md-45 text-center text-lg-start">
                         <span className="sub-title2 style1">CONTACT US</span>
                         <h2 className="sec-title text-white">Do you have questions?</h2>
                      </div>
@@ -91,9 +91,10 @@ const ContactArea = () => {
                               <option value="" disabled hidden>
                                  Subject
                               </option>
-                              <option value="Luxury Hotel">Luxury Hotel</option>
-                              <option value="Rooms">Rooms</option>
-                              <option value="Hotel">Hotel</option>
+                              <option value="Room Reservation">Room Reservation</option>
+                              <option value="Event Booking">Event Booking</option>
+                              <option value="General Inquiry">General Inquiry</option>
+                              <option value="Feedback">Feedback</option>
                            </select>
                            {validator.current.message("subject", formData.subject, "required")}
                            <i className="fa-solid fa-caret-down"></i>
@@ -115,9 +116,9 @@ const ContactArea = () => {
                      </div>
                   </form>
                </div>
-               <div className="col-xl-6">
-                  <div className="contact-image global-img">
-                     <img src={contactimg} alt="" />
+               <div className="col-lg-6">
+                  <div className="contact-image global-img" style={{ minHeight: '350px' }}>
+                     <img src={contactimg} alt="Contact Us" />
                   </div>
                </div>
             </div>

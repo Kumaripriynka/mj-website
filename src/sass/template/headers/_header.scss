@@ -407,6 +407,38 @@
     }
 }
 
+.contact-btn-header {
+    &:hover {
+        background-color: #B38235;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(194, 145, 61, 0.3);
+    }
+
+    @include md {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+
+    @include sm {
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+}
+
+.th-btn-icon {
+    &:hover {
+        color: $theme-color;
+    }
+
+    @include md {
+        font-size: 20px;
+    }
+
+    @include sm {
+        font-size: 18px;
+    }
+}
+
 .social-links {
     .social-title {
         font-weight: 500;

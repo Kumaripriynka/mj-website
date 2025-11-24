@@ -1,0 +1,139 @@
+/* Contact Page Responsive Styles */
+
+/* Contact card wrapper base */
+.contact-card-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(194, 145, 61, 0.2) !important;
+}
+
+/* Breadcrumb responsive */
+.breadcumb-wrapper {
+  padding: 80px 0 60px;
+}
+
+@media (max-width: 991px) {
+  .breadcumb-wrapper {
+    padding: 70px 20px 50px;
+  }
+  
+  .contact-card-wrapper {
+    padding: 25px !important;
+  }
+  
+  .contact-card-wrapper i {
+    font-size: 38px !important;
+  }
+  
+  .contact-card-wrapper h3 {
+    font-size: 19px !important;
+  }
+  
+  .contact-card-wrapper p,
+  .contact-card-wrapper a {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcumb-wrapper {
+    padding: 60px 15px 40px;
+  }
+  
+  .space-top.space-bottom {
+    padding: 40px 0 !important;
+  }
+  
+  .contact-card-wrapper {
+    padding: 22px !important;
+    margin-bottom: 15px;
+  }
+  
+  .contact-card-wrapper i {
+    font-size: 36px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .contact-card-wrapper h3 {
+    font-size: 18px !important;
+    margin-bottom: 6px !important;
+  }
+  
+  .contact-card-wrapper p {
+    font-size: 13px !important;
+  }
+  
+  .contact-card-wrapper a {
+    font-size: 13px !important;
+  }
+  
+  .contact-map-wrapper {
+    height: 350px !important;
+  }
+  
+  .phone-numbers {
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+  
+  .phone-numbers span {
+    display: none !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .breadcumb-wrapper {
+    padding: 50px 12px 30px;
+  }
+  
+  .space-top.space-bottom {
+    padding: 30px 0 !important;
+  }
+  
+  .contact-card-wrapper {
+    padding: 20px !important;
+  }
+  
+  .contact-card-wrapper i {
+    font-size: 32px !important;
+  }
+  
+  .contact-card-wrapper h3 {
+    font-size: 17px !important;
+  }
+  
+  .contact-card-wrapper p,
+  .contact-card-wrapper a {
+    font-size: 12px !important;
+  }
+  
+  .contact-map-wrapper {
+    height: 300px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .breadcumb-wrapper {
+    padding: 40px 10px 25px;
+  }
+  
+  .contact-card-wrapper {
+    padding: 18px !important;
+  }
+  
+  .contact-card-wrapper i {
+    font-size: 30px !important;
+  }
+  
+  .contact-card-wrapper h3 {
+    font-size: 16px !important;
+  }
+  
+  .contact-map-wrapper {
+    height: 280px !important;
+  }
+}

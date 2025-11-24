@@ -5,6 +5,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import { EffectFade, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import './HeroAreaS3.css';
 
 import SliderBg1 from '../../img/hero/mjhome.png';
 import SliderBg2 from '../../img/hero/mjhome.png';
@@ -149,6 +150,38 @@ const HeroSlider = () => {
                               <p className="hero-text" data-ani="slideinup" data-ani-delay="0.7s">
                                  {bg.dicpt}
                               </p>
+                              
+                              <div className="hero-announcement" data-ani="slideinup" data-ani-delay="0.8s" style={{
+                                 marginTop: '30px',
+                                 display: 'inline-block'
+                              }}>
+                                 <div style={{
+                                    background: 'linear-gradient(135deg, #C2913D 0%, #D4A853 100%)',
+                                    padding: '18px 35px',
+                                    borderRadius: '50px',
+                                    boxShadow: '0 8px 25px rgba(194, 145, 61, 0.4)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '15px',
+                                    animation: 'pulse 2s infinite'
+                                 }}>
+                                    <div style={{ textAlign: 'center' }}>
+                                       <div style={{
+                                          color: '#fff',
+                                          fontSize: '22px',
+                                          fontWeight: '800',
+                                          letterSpacing: '1px',
+                                          marginBottom: '2px'
+                                       }}>Resorts Open Now!</div>
+                                       <div style={{
+                                          color: '#fff',
+                                          fontSize: '15px',
+                                          fontWeight: '600',
+                                          opacity: 0.95
+                                       }}>Book for Events & Parties</div>
+                                    </div>
+                                 </div>
+                              </div>
 
                            </div>
                         </div>

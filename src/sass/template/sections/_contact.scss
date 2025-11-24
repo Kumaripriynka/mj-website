@@ -278,8 +278,16 @@
         padding: 45px;
     }
 
+    @include md {
+        padding: 35px;
+    }
+
+    @include sm {
+        padding: 25px;
+    }
+
     @include xs {
-        padding: 30px;
+        padding: 20px;
     }
 
     .sec-title {
@@ -350,15 +358,49 @@
     textarea.form-control,
     textarea {
         min-height: 200px;
+
+        @include md {
+            min-height: 150px;
+        }
+
+        @include xs {
+            min-height: 120px;
+            font-size: 14px;
+        }
     }
 
     .form-btn {
         margin-top: 15px;
+
+        @include xs {
+            width: 100%;
+        }
+    }
+
+    .form-group {
+        @include xs {
+            margin-bottom: 12px;
+        }
     }
 }
 
 .contact-image {
     height: 100%;
+
+    @include md {
+        height: 350px;
+        min-height: 350px;
+    }
+
+    @include sm {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    @include xs {
+        height: 250px;
+        min-height: 250px;
+    }
 
     img {
         width: 100%;

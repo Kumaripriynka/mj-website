@@ -19,8 +19,8 @@ const HeaderTopS2 = (props) => {
                <div className="col-auto">
                   <div className="header-links">
                      <ul>
-                        <li className="d-none d-md-inline-block"><i className="fa-sharp fa-solid fa-phone"></i>8228045049</li>
-                        <li className="d-none d-md-inline-block"><i className="fa-sharp fa-solid fa-mailbox"></i><a href="mailto:gm@mjhotelandresorts.com">gm@mjhotelandresorts.com</a></li>
+                        <li className="d-none d-md-inline-block"><i className="fa-sharp fa-solid fa-phone"></i><Link onClick={ClickHandler} to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>8228045049</Link></li>
+                        <li className="d-none d-md-inline-block"><i className="fa-sharp fa-solid fa-mailbox"></i><Link onClick={ClickHandler} to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>gm@mjhotelandresorts.com</Link></li>
                     
                         <li>
                            {/* <div className="dropdown-link">
