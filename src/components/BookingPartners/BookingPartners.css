@@ -1,0 +1,70 @@
+.booking-partners-area {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.text-golden {
+    color: #C2913D;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Even spacing */
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.partner-item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.partner-item:hover {
+    transform: translateY(-5px);
+}
+
+.partner-logo {
+    max-height:100px;
+    /* Standard height */
+    width: auto;
+    object-fit: contain;
+    /* 3D Effect using drop-shadow */
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+    transition: all 0.3s ease;
+}
+
+.partner-item:hover .partner-logo {
+    filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 992px) {
+    .partners-grid {
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partners-grid {
+        gap: 20px;
+    }
+
+    .partner-logo {
+        max-height: 40px;
+    }
+
+    .text-golden {
+        font-size: 36px;
+    }
+}

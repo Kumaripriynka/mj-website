@@ -80,7 +80,7 @@ const BookingAreaS3 = (props) => {
                <div className="col-xl-6 col-xxl-4">
                   <div className="ps-xl-5">
                      <div className="title-area mb-45 pe-xxl-5">
-                        <span className="sub-title2 style1">COMING SOON</span>
+                        <span className="sub-title2 style1">Experience Luxuary</span>
                         <h2 className="sec-title text-white ">Be The First To Experience Luxury</h2>
                      </div>
                      <div className="call-info">

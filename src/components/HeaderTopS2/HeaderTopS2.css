@@ -1,0 +1,12 @@
+.header-top-s2 {
+    background-color: #0d4d4d;
+    border-bottom: 1px solid rgba(194, 145, 61, 0.2);
+    padding: 10px 0;
+}
+
+/* Hide on screens smaller than 992px (tablets and mobile) */
+@media (max-width: 991px) {
+    .header-top-s2 {
+        display: none !important;
+    }
+}

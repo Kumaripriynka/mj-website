@@ -3,13 +3,16 @@ import { useEffect, useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
-import { EffectFade, Navigation } from 'swiper/modules';
+import { EffectFade, Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './HeroAreaS3.css';
 
-import SliderBg1 from '../../img/hero/mjhome.png';
-import SliderBg2 from '../../img/hero/mjhome.png';
-import SliderBg3 from '../../img/hero/mjhome.png';
+import SliderBg1 from '../../img/event/event1.png';
+import SliderBg2 from '../../img/event/event2.png';
+import SliderBg3 from '../../img/event/event3.png';
+import SliderBg4 from '../../img/event/event4.png';
+import SliderBg5 from '../../img/event/event5.png';
+import SliderBg6 from '../../img/event/event6.png';
 
 import left from '../../img/icon/hero-arrow-left.svg';
 import right from '../../img/icon/hero-arrow-right.svg';
@@ -21,35 +24,51 @@ import ScrollLink from '../ScrollLink/ScrollLink';
 const slides = [
    {
       id: '01',
-      title: 'Exclusive & Sophisticated Luxury Hotel',
-      dicpt: 'MJ hotel is a peaceful place to rest, to recover your energies and to have great laughs with your family.',
+      title: 'Dream Wedding Destination',
+      dicpt: 'Make your special day unforgettable with our luxury wedding venues.',
       SliderBg: SliderBg1
    },
    {
       id: '02',
-      title: 'Welcome to MJ Full of Luxury Experience',
-      dicpt: 'MJ hotel is a peaceful place to rest, to recover your energies and to have great laughs with your family.',
+      title: 'Celebrate Birthdayin Style',
+      dicpt: 'Host the perfect birthday bash with our premium event spaces.',
       SliderBg: SliderBg2,
    },
    {
       id: '03',
-      title: 'Exclusive & Sophisticated Luxury Hotel',
-      dicpt: 'MJ hotel is a peaceful place to rest, to recover your energies and to have great laughs with your family.',
+      title: 'Bachelor Bash Events',
+      dicpt: 'Create the ultimate bachelor party experience with curated setups and fun themes.',
       SliderBg: SliderBg3,
+   },
+   {
+      id: '04',
+      title: 'Magical Engagement Ceremonies',
+      dicpt: 'Begin your journey of love in a romantic and elegant setting.',
+      SliderBg: SliderBg4,
+   },
+   {
+      id: '05',
+      title: 'Luxury Lounge Experience',
+      dicpt: 'Unwind in a refined lounge atmosphere designed for relaxation and unforgettable moments.',
+      SliderBg: SliderBg5,
+   },
+   {
+      id: '06',
+      title: 'Banquet Hall for Every Occasion',
+      dicpt: 'A modern banquet hall ideal for parties, receptions, corporate meets, and social gatherings.',
+      SliderBg: SliderBg6,
    },
 
 ];
 const HeroSlider = () => {
    const [activeIndex, setActiveIndex] = useState(0);
-   const prevRef = useRef(null);
-   const nextRef = useRef(null);
+   const [prevEl, setPrevEl] = useState(null);
+   const [nextEl, setNextEl] = useState(null);
 
    const settings = {
       loop: true,
       speed: 1200,
    };
-
-   const autoplayCondition = null;
 
    useEffect(() => {
       const animatedElements = document.querySelectorAll('[data-ani]');
@@ -91,17 +110,17 @@ const HeroSlider = () => {
          <div className="slider-area">
             <Swiper
                effect="fade"
-               modules={[EffectFade, Navigation]}
+               modules={[EffectFade, Navigation, Autoplay]}
                loop={settings['loop'] === false ? false : true}
                speed={settings['speed'] ? settings['speed'] : 1000}
-               onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-               onBeforeInit={(swiper) => {
-                  swiper.params.navigation.prevEl = prevRef.current;
-                  swiper.params.navigation.nextEl = nextRef.current;
+               autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
                }}
+               onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                navigation={{
-                  prevEl: prevRef.current,
-                  nextEl: nextRef.current
+                  prevEl,
+                  nextEl
                }}
                className="swiper th-slider" id="heroSlide3"
             >
@@ -123,10 +142,7 @@ const HeroSlider = () => {
                                     <CircleTextS2 text="MJ hotel launching soon* MJ hotel launching soon*" />
                                  </div> */}
                               </div>
-                              <div className="hero-category" data-ani="slideinup" data-ani-delay="0.5s" style={{
-                                 display: 'inline-block',
-                                 marginBottom: '25px'
-                              }}>
+                              <div className="hero-category" data-ani="slideinup" data-ani-delay="0.5s">
                                  <span style={{ 
                                     background: 'rgba(194, 145, 61, 0.15)',
                                     border: '2px solid #C2913D',
@@ -134,13 +150,13 @@ const HeroSlider = () => {
                                     padding: '8px 20px',
                                     borderRadius: '30px',
                                     fontWeight: '700',
-                                    fontSize: '16px',
+                                    fontSize: '10px',
                                     letterSpacing: '1px',
                                     display: 'inline-flex',
                                     alignItems: 'center',
                                     gap: '8px'
                                  }}>
-                                    <span style={{ fontSize: '20px' }}>★★★★</span>
+                                    <span style={{ fontSize: '25px' }}>★★★★</span>
                                     <span>4-STAR HOTEL</span>
                                  </span>
                               </div>
@@ -151,7 +167,7 @@ const HeroSlider = () => {
                                  {bg.dicpt}
                               </p>
                               
-                              <div className="hero-announcement" data-ani="slideinup" data-ani-delay="0.8s" style={{
+                              {/* <div className="hero-announcement" data-ani="slideinup" data-ani-delay="0.8s" style={{
                                  marginTop: '30px',
                                  display: 'inline-block'
                               }}>
@@ -181,7 +197,7 @@ const HeroSlider = () => {
                                        }}>Book for Events & Parties</div>
                                     </div>
                                  </div>
-                              </div>
+                              </div> */}
 
                            </div>
                         </div>
@@ -192,7 +208,7 @@ const HeroSlider = () => {
 
 
             <button
-               ref={prevRef}
+               ref={(node) => setPrevEl(node)}
                className="slider-arrow slider-prev slider-prev-bg"
                style={{
                   backgroundImage: `url(${slides[(activeIndex - 1 + slides.length) % slides.length].SliderBg})`,
@@ -206,7 +222,7 @@ const HeroSlider = () => {
             </button>
 
             <button
-               ref={nextRef}
+               ref={(node) => setNextEl(node)}
                className="slider-arrow slider-next slider-next-bg"
                style={{
                   backgroundImage: `url(${slides[(activeIndex + 1) % slides.length].SliderBg})`,
@@ -220,7 +236,7 @@ const HeroSlider = () => {
             </button>
          </div>
 
-         <div
+         {/* <div
             className="map-view shape-mockup2" data-top="13%" data-right="8%">
             <span className="hero-map"><i className="fa-sharp fa-solid fa-location-dot"></i></span>
             <div className="card-view">
@@ -229,7 +245,7 @@ const HeroSlider = () => {
                <h3 className="box-title">Post-K.G Ashram, Jailgarha, NH-2, Grand Trunk Rd, Gobindpur, Dhanbad, Jharkhand 828109</h3>
                <a className="th-btn btn-fw" target="_blank" href="https://share.google/MWTnppslRKNgcfKH3">Open on Map</a>
             </div>
-         </div>
+         </div> */}
 
          {/* <div className="scanbox shape-mockup2" data-top="22%" data-right="10%">
             <div className="sb-frame"><img src={bar} alt="" />
@@ -256,3 +272,4 @@ const HeroSlider = () => {
    );
 }
 export default HeroSlider;
+

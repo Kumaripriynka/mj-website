@@ -1,0 +1,408 @@
+/* Header Area S2 Styles */
+
+.header-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.4s ease;
+    padding: 20px 0;
+    background: #0d4d4d;
+    /* Default solid background for all pages */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Transparent header - NO background at all */
+.header-area.transparent {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.header-area.sticky {
+    background: #0d4d4d;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+}
+
+/* When sticky, ensure background is solid */
+.header-area.sticky.transparent {
+    background: #0d4d4d !important;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    flex-shrink: 0;
+}
+
+.header-logo img {
+    height: 90px !important;
+    max-height: 90px !important;
+    width: auto !important;
+    max-width: 200px !important;
+    object-fit: contain !important;
+    transition: all 0.3s ease;
+    display: block !important;
+}
+
+/* Logo for transparent header - make it darker for contrast */
+.header-area.transparent .header-logo img {
+    filter: brightness(0.9) contrast(1.2);
+}
+
+.header-area.sticky .header-logo img {
+    height: 70px !important;
+    max-height: 70px !important;
+    filter: none;
+}
+
+/* Main Menu Wrapper - Center the menu */
+.main-menu-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Menu Styles - ALWAYS VISIBLE */
+.main-menu {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-menu ul li {
+    position: relative;
+}
+
+/* DEFAULT STYLES - GOLDEN TEXT */
+.main-menu ul li a {
+    color: #C2913D;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.0px;
+    text-decoration: none;
+    padding: 0PX;
+    display: block;
+    transition: all 0.3s ease;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* TRANSPARENT HEADER STYLES - GOLDEN TEXT */
+.header-area.transparent .main-menu ul li a {
+    color: #C2913D !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+/* Add a subtle background on hover for transparent header */
+.header-area.transparent .main-menu ul li a:hover {
+    color: #D4A853 !important;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+/* Underline animation for both states */
+.main-menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #BF930F;
+    transition: width 0.3s ease;
+}
+
+.main-menu ul li a:hover::after {
+    width: 100%;
+}
+
+/* Sticky state hover */
+.header-area:not(.transparent) .main-menu ul li a:hover {
+    color: #D4A853;
+}
+
+/* Coming Soon Badge */
+.coming-soon-item {
+    position: relative;
+}
+
+.coming-soon-item a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: default;
+}
+
+.coming-soon-item .badge {
+    background-color: #BF930F;
+    color: #fff;
+    font-size: 9px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.header-area.transparent .coming-soon-item .badge {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Header Right - for mobile toggle */
+.header-right {
+    flex-shrink: 0;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    background: #BF930F;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+    background: #D4A853;
+}
+
+/* Transparent header toggle button */
+.header-area.transparent .menu-toggle {
+    background: rgba(51, 51, 51, 0.8);
+    color: #ffffff;
+}
+
+.menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(191, 147, 15, 0.1);
+    border: none;
+    color: #333;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.menu-close:hover {
+    background: #BF930F;
+    color: #fff;
+    transform: rotate(90deg);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 1199px) {
+    .header-main {
+        padding: 0 20px;
+    }
+
+    .main-menu ul {
+        gap: 20px;
+    }
+
+    .main-menu ul li a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .main-menu-wrapper {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(350px, 85vw);
+        height: 100vh;
+        background: #fff;
+        z-index: 1000;
+        padding: 80px 25px 30px;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        justify-content: flex-start;
+    }
+
+    .main-menu-wrapper.open {
+        right: 0;
+    }
+
+    .main-menu {
+        width: 100%;
+    }
+
+    .main-menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        width: 100%;
+    }
+
+    .main-menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .main-menu ul li a {
+        color: #333;
+        font-size: 14px;
+        padding: 16px 0;
+        width: 100%;
+        text-shadow: none !important;
+        white-space: normal;
+        word-wrap: break-word;
+        line-height: 1.4;
+        display: block;
+    }
+
+    /* Coming soon item in mobile */
+    .coming-soon-item a {
+        display: block !important;
+        white-space: normal !important;
+        padding: 16px 0 !important;
+    }
+
+    .main-menu ul li a::after {
+        display: none;
+    }
+
+    .main-menu ul li a:hover {
+        color: #BF930F;
+        background: transparent;
+        padding: 16px 0;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 998;
+    }
+
+    /* On mobile, add a semi-transparent background for better readability */
+    .header-area.transparent {
+        background: rgba(255, 255, 255, 0.1) !important;
+        backdrop-filter: blur(5px);
+    }
+
+    .header-logo img {
+        height: 70px !important;
+        max-height: 70px !important;
+    }
+
+    .header-area.sticky .header-logo img {
+        height: 55px !important;
+        max-height: 55px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .header-main {
+        padding: 0 15px;
+    }
+
+    .header-logo img {
+        height: 60px !important;
+        max-height: 60px !important;
+    }
+
+    .header-area.sticky .header-logo img {
+        height: 50px !important;
+        max-height: 50px !important;
+    }
+}
+
+/* Ensure HeaderTopS2 doesn't interfere with transparent header */
+.header-top-wrapper {
+    position: relative;
+    z-index: 1000;
+}
+
+/* Force menu visibility */
+.main-menu-wrapper,
+.main-menu,
+.main-menu ul,
+.main-menu ul li {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Additional mobile responsiveness */
+@media (max-width: 767px) {
+    .main-menu-wrapper {
+        width: min(320px, 88vw);
+        padding: 75px 22px 30px;
+    }
+
+    .main-menu ul li a {
+        font-size: 13.5px;
+        padding: 15px 0;
+    }
+
+    .coming-soon-item a {
+        padding: 15px 0 !important;
+        font-size: 13.5px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-menu-wrapper {
+        width: min(280px, 92vw);
+        padding: 70px 18px 25px;
+    }
+
+    .main-menu ul li a {
+        font-size: 13px;
+        padding: 14px 0;
+    }
+
+    .coming-soon-item a {
+        padding: 14px 0 !important;
+        font-size: 12.5px !important;
+    }
+
+    .menu-close {
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+    }
+
+    .menu-toggle {
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+}

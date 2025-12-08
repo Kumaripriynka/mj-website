@@ -1,0 +1,148 @@
+/* Room Area S6 Styles */
+.room-area-s6 {
+  padding: 80px 0;
+  background-color: rgba(13, 77, 77, 0.9); /* Matching website theme background */
+  color: #fff; /* White text for contrast */
+}
+
+.room-card {
+  background: rgba(13, 77, 77, 0.9); /* Matching the main theme color with good opacity */
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 50px;
+  box-shadow: 0 5px 20px rgba(13, 77, 77, 0.9);
+  border: 1px solid rgba(191, 147, 15, 0.3);
+  transition: all 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(13, 77, 77, 0.9);;
+  border-color: rgba(191, 147, 15, 0.5);
+  background: rgba(13, 77, 77, 0.9); /* Slightly more solid on hover */
+}
+
+/* Button Styling - Matching website theme */
+.btn-primary {
+  background: #BF930F; /* Gold accent matching header */
+  color: #fff; /* White text */
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #D4A853; /* Lighter gold on hover */
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(191, 147, 15, 0.4);
+}
+
+/* Section Title Styling */
+.section-title .subtitle {
+  color: #BF930F; /* Gold accent matching theme */
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.section-title .title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Room Image Styling */
+.room-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.main-room-image {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover .main-room-image {
+  transform: scale(1.02);
+}
+
+/* Age Badge Styling */
+.age-badge {
+  background: #BF930F;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+/* Thumbnail Styling */
+.room-thumbnails {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.thumbnail-item {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.thumbnail-item:hover,
+.thumbnail-item.active {
+  opacity: 1;
+  border-color: #BF930F; /* Gold accent matching theme */
+}
+
+.thumbnail-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .room-card {
+    padding: 30px 20px;
+  }
+  
+  .section-title .title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .room-area-s6 {
+    padding: 60px 0;
+  }
+  
+  .room-card {
+    margin-bottom: 30px;
+  }
+  
+  .section-title .title {
+    font-size: 24px;
+  }
+  
+  .thumbnail-item {
+    width: 60px;
+    height: 60px;
+  }
+}

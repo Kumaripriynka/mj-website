@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import HeaderAreaS2 from '../../components/HeaderAreaS2/HeaderAreaS2';
+import HeaderTopS2 from '../../components/HeaderTopS2/HeaderTopS2';
 import FooterAreaS3 from '../../components/FooterAreaS3/FooterAreaS3';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
 import ContactArea from '../../components/ContactArea/ContactArea';
@@ -8,16 +9,18 @@ const ContactPage = () => {
    return (
       <Fragment>
          <div className="home-city-hotel" style={{ backgroundColor: "#112E2E" }}>
+            <HeaderTopS2 hclass={'header-top'} />
             <HeaderAreaS2 hclass={'th-header header-layout3'} />
             
             {/* Page Title with Breadcrumb */}
             <div className="breadcumb-wrapper" style={{
                background: 'linear-gradient(135deg, #112E2E 0%, #184040 100%)',
-               padding: '80px 0 60px'
+               paddingTop: 'clamp(140px, 20vw, 160px)',
+               paddingBottom: '80px'
             }}>
                <div className="container">
                   <div className="breadcumb-content text-center">
-                     <div style={{ marginBottom: '20px' }}>
+                     <div style={{ marginTop: '20px', marginBottom: '20px' }}>
                         <a href="/" style={{
                            color: '#C2913D',
                            textDecoration: 'none',
@@ -40,6 +43,7 @@ const ContactPage = () => {
                      <h1 className="breadcumb-title" style={{ 
                         color: '#fff', 
                         fontSize: 'clamp(32px, 5vw, 48px)', 
+                        marginTop: '25px',
                         marginBottom: '15px',
                         fontWeight: '800'
                      }}>Contact Us</h1>
