@@ -42,7 +42,7 @@ const EventArea = (props) => {
                   borderRadius: '50%'
                }}></div>
                <div style={{ position: 'relative', zIndex: 1 }}>
-                  <h2 style={{
+                  {/* <h2 style={{
                      color: '#fff',
                      fontSize: '42px',
                      fontWeight: '800',
@@ -51,7 +51,7 @@ const EventArea = (props) => {
                      letterSpacing: '2px'
                   }}>
                      RESORT IS NOW OPEN!
-                  </h2>
+                  </h2> */}
                   <p style={{
                      color: '#fff',
                      fontSize: '20px',

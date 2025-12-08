@@ -59,7 +59,7 @@ const TestimonialAreaS3 = (props) => {
             <div className="row justify-content-between align-items-center">
                <div className="col-xxl-4 col-xl-5 col-lg-6">
                   <div className="title-area mb-30 text-center text-md-start">
-                     <span className="sub-title2 style1">WHY CHOOSE US</span>
+                     <span className="sub-title2 style1">WHY MJ HOTEL?</span>
                      <h2 className="sec-title" style={{color: '#ffffff'}}>Premium Features at MJ Hotel Dhanbad</h2>
                   </div>
                </div>

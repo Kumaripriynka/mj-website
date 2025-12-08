@@ -1,0 +1,125 @@
+.welcome-features-area {
+    position: relative;
+    z-index: 2;
+    padding: var(--section-space) 0;
+    background-color: var(--body-bg);
+}
+
+.welcome-content {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.welcome-title {
+    color: var(--theme-color);
+    margin-bottom: 20px;
+    font-family: var(--title-font);
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.welcome-text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--body-color);
+}
+
+.welcome-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.welcome-divider img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Marquee Styles */
+.features-marquee {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-item {
+    padding: 15px;
+    /* Spacing between slides */
+    height: 100%;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 20px 15px;
+    /* Reduced vertical padding for rectangular look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 1px solid #f1c40f;
+    /* Light Golden border */
+    border-radius: 8px;
+    background-color: transparent;
+    /* Transparent as requested */
+    transition: all 0.4s ease;
+    height: 220px;
+    /* Fixed height to keep all identical */
+    width: 100%;
+    /* Ensure it fills the slide width */
+}
+
+.feature-icon-img {
+    margin-bottom: 0;
+    /* Handled by gap */
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    /* Slightly smaller to match compact look */
+}
+
+.feature-icon-img img {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    /* 
+       1. grayscale & contrast(100): Force image to Black/White.
+       2. invert(1): Turn White BG to Black, Dark Icon to White.
+       3. sepia(1): Turn White Icon to Sepia.
+       4. saturate(5): Boost Sepia to Gold/Orange.
+       5. hue-rotate(5deg): Fine tune to Gold.
+       6. mix-blend-mode: lighten: Hide the Black BG (Black + Color = Color).
+    */
+    filter: grayscale(1) contrast(100) invert(1) sepia(1) saturate(5) hue-rotate(5deg);
+    mix-blend-mode: lighten;
+    background-color: transparent;
+}
+
+.feature-title {
+    font-size: 14px;
+    font-weight: 600;
+    /* Made slightly bolder for readability */
+    color: #ffffff;
+    /* White color as requested */
+    text-transform: none;
+    letter-spacing: 0;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-color: #f1c40f;
+}
+
+.feature-box:hover .feature-icon-img {
+    transform: scale(1.1);
+}

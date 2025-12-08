@@ -1,10 +1,95 @@
 /* Hero Area Custom Styles */
 
+.hero-3.slider-area {
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.hero-3 .swiper-slide {
+  height: 100vh;
+}
+
+.hero-3 .hero-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
+
+/* Hero Content Responsive Styles */
+.hero-3 .hero-style3 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-3 .hero-category {
+  margin-bottom: 25px;
+}
+
+.hero-3 .hero-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.hero-3 .hero-text {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  color: #fff;
+  max-width: 600px;
+}
+
+/* Navigation Buttons */
+.hero-3 .slider-arrow {
+  display: none;
+}
+
+.hero-3 .slider-arrow:hover {
+  background-color: #C2913D;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.hero-3 .slider-prev {
+  left: 30px;
+}
+
+.hero-3 .slider-next {
+  right: 30px;
+}
+
+.hero-3 .slider-arrow .arrow img {
+  width: 20px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Hide background image on buttons for cleaner look, or style if needed */
+.hero-3 .slider-arrow.slider-prev-bg,
+.hero-3 .slider-arrow.slider-next-bg {
+  background-image: none !important;
+  /* Overriding inline style if we want a cleaner look */
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
     box-shadow: 0 8px 25px rgba(194, 145, 61, 0.4);
   }
+
   50% {
     transform: scale(1.05);
     box-shadow: 0 12px 35px rgba(194, 145, 61, 0.6);
@@ -12,37 +97,116 @@
 }
 
 /* Responsive adjustments for hero announcement */
+@media (max-width: 1199px) {
+  .hero-3 .hero-inner {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-3 .hero-inner {
+    padding-top: 110px;
+  }
+
+  .hero-3 .hero-style3 {
+    padding: 0 30px;
+  }
+}
+
 @media (max-width: 767px) {
-  .hero-announcement > div {
+  .hero-3 .hero-inner {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .hero-3 .hero-style3 {
+    padding: 0 20px;
+  }
+
+  .hero-3 .hero-category {
+    margin-bottom: 20px;
+  }
+
+  .hero-3 .hero-title {
+    margin-bottom: 15px;
+  }
+
+  .hero-announcement>div {
     padding: 15px 25px !important;
     gap: 12px !important;
   }
-  
+
   .hero-announcement span {
     width: 35px !important;
     height: 35px !important;
     font-size: 18px !important;
   }
-  
-  .hero-announcement > div > div > div:first-child {
+
+  .hero-announcement>div>div>div:first-child {
     font-size: 18px !important;
   }
-  
-  .hero-announcement > div > div > div:last-child {
+
+  .hero-announcement>div>div>div:last-child {
     font-size: 13px !important;
+  }
+
+  .hero-3 .slider-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-3 .slider-prev {
+    left: 10px;
+  }
+
+  .hero-3 .slider-next {
+    right: 10px;
   }
 }
 
 @media (max-width: 575px) {
-  .hero-announcement > div {
+  .hero-3 .hero-inner {
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+
+  .hero-3 .hero-style3 {
+    padding: 0 15px;
+  }
+
+  .hero-3 .hero-category {
+    margin-bottom: 15px;
+  }
+
+  .hero-announcement>div {
     padding: 12px 20px !important;
   }
-  
-  .hero-announcement > div > div > div:first-child {
+
+  .hero-announcement>div>div>div:first-child {
     font-size: 16px !important;
   }
-  
-  .hero-announcement > div > div > div:last-child {
+
+  .hero-announcement>div>div>div:last-child {
     font-size: 12px !important;
   }
 }
+
+/* Scroll Down Element */
+.hero-3 .scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* Hero Category Badge Responsive Styles */
+.hero-3 .hero-category span {
+  font-size: clamp(9px, 1.5vw, 10px);
+}
+
+.hero-3 .hero-category span span:first-child {
+  font-size: clamp(18px, 3vw, 25px);
+}
+
+

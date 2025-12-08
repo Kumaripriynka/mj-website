@@ -8,6 +8,10 @@ import BlogDetailsPage from './BlogDetailsPage/BlogDetailsPage'
 import BlogGridPage from './BlogGridPage/BlogGridPage'
 import BlogPage from './BlogPage/BlogPage'
 import ContactPage from './ContactPage/ContactPage'
+import NearbyAttractionsPage from './NearbyAttractionsPage/NearbyAttractionsPage'
+import BanquetHallPage from './BanquetHallPage/BanquetHallPage'
+import SwimmingPage from './SwimmingPage/SwimmingPage'
+import RestroPage from './RestroPage/RestroPage'
 import EquipmentPage from './EquipmentPage/EquipmentPage'
 import ErrorPage from './ErrorPage/ErrorPage'
 import EventDetailsPage from './EventDetailsPage/EventDetailsPage'
@@ -51,8 +55,11 @@ const App = () => {
                <Routes>
                   <Route element={<HomePageS3 />} path="/" />
                   <Route element={<HomePageS3 />} path="home-3" />
-                  {/* <Route element={<AboutPage />} path="about" />
+                  <Route element={<BanquetHallPage />} path="banquet-hall" />
+                  <Route element={<SwimmingPage />} path="swimming" />
+                  <Route element={<RestroPage />} path="restro-bar" />
                   <Route element={<RoomPage />} path="room" />
+                  {/* <Route element={<AboutPage />} path="about" />
                   <Route element={<RoomDetailsPage />} path='room-details/:slug' />
                   <Route element={<TeamPage />} path="team" />
                   <Route element={<TeamDetailsPage />} path='team-details/:slug' />
@@ -72,6 +79,7 @@ const App = () => {
                   <Route element={<BlogDetailsPage />} path='blog-details/:slug' />
                   <Route element={<BlogDetailSidebarPage />} path='blog-details-right-sidebar/:slug' /> */}
                   <Route element={<ContactPage />} path='contact' />
+                  <Route element={<NearbyAttractionsPage />} path='nearby-attractions' />
                   {/* <Route element={<ErrorPage />} path="error" /> */}
                </Routes>
             </BrowserRouter>

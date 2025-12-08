@@ -81,24 +81,7 @@ const RoomsAreaS6 = () => {
         </>
       </div>
 
-      <div className="th-pagination text-center mt-60 mb-0">
-        <ul>
-          <li>
-            <Link onClick={ClickHandler} to="/blog">
-              <img src={left} alt="Previous" />
-            </Link>
-          </li>
-          <li><Link onClick={ClickHandler} to="/blog">1</Link></li>
-          <li><Link onClick={ClickHandler} to="/blog">2</Link></li>
-          <li><Link onClick={ClickHandler} to="/blog">3</Link></li>
-          <li><Link onClick={ClickHandler} to="/blog">4</Link></li>
-          <li>
-            <Link onClick={ClickHandler} to="/blog">
-              <img src={right} alt="Next" />
-            </Link>
-          </li>
-        </ul>
-      </div>
+     
     </section>
   );
 };

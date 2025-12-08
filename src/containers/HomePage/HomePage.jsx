@@ -15,6 +15,7 @@ import RoomsArea from '../../components/RoomsArea/RoomsArea';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
 import ServiceArea from '../../components/ServiceArea/ServiceArea';
 import TestimonialArea from '../../components/TestimonialArea/TestimonialArea';
+import WelcomeFeatures from '../../components/WelcomeFeatures/WelcomeFeatures';
 
 
 const HomePage = () => {
@@ -24,6 +25,7 @@ const HomePage = () => {
          <ColorScheme />
          <HeaderArea hclass={'th-header header-layout1'} ContactBtn={true} />
          <HeroArea />
+         <WelcomeFeatures />
          <AboutArea hclass={'about-shape overflow-hidden bg-shape'} />
          <RoomsArea hclass={'overflow-hidden bg-shape space-top'} />
          <HotelArea hclass={'bg-shape space-top overflow-hidden'} />
