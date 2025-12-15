@@ -16,6 +16,7 @@ import Scrollbar from '../../components/Scrollbar/Scrollbar';
 import ServiceArea from '../../components/ServiceArea/ServiceArea';
 import TestimonialArea from '../../components/TestimonialArea/TestimonialArea';
 import WelcomeFeatures from '../../components/WelcomeFeatures/WelcomeFeatures';
+import PoliciesNote from '../../components/PoliciesNote/PoliciesNote';
 
 
 const HomePage = () => {
@@ -30,6 +31,14 @@ const HomePage = () => {
          <RoomsArea hclass={'overflow-hidden bg-shape space-top'} />
          <HotelArea hclass={'bg-shape space-top overflow-hidden'} />
          <FeatureArea hclass={'space-top overflow-hidden bg-shape'} />
+         
+         {/* Policies Note Section */}
+         <section style={{ background: '#f9f9f9', padding: '80px 0 60px 0', marginTop: '30px' }}>
+            <div className="container">
+               <PoliciesNote isDarkBg={false} />
+            </div>
+         </section>
+         
          <BrandArea hclass={'space bg-shape'} />
          <AboutAreaS2 hclass={'about-area2 overflow-hidden shape-mockup-wrap'} />
          <ServiceArea hclass={'overflow-hidden bg-shape space-top'} />

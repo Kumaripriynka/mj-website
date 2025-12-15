@@ -20,7 +20,7 @@ const GalleryAreaS3 = (props) => {
                   <span className="sub-title2 style1">Brand New Hotel in Dhanbad</span>
                   <h2 className="sec-title">Hotel Preview Gallery</h2>
                </div>
-               <p className="mt-3">Get a glimpse of the luxury and elegance that awaits you at MJ Hotel Dhanbad. Experience premium hospitality in the heart of Jharkhand.</p>
+               <p className="mt-3">Get a glimpse of the luxury and elegance that awaits you at M J Hotel and Resorts Dhanbad. Experience premium hospitality in the heart of Jharkhand.</p>
             </div>
             <div className="row gy-4">
                <div className="col-md-6 col-lg-4 gallery-card_wrapp">
@@ -73,7 +73,7 @@ const GalleryAreaS3 = (props) => {
                </div>
             </div>
             <div className="gallery-btn mt-50 text-center">
-               <h2 className="sec-title mb-4"><span className="text-white">MJ Hotel Dhanbad - Launched Now</span></h2>
+               <h2 className="sec-title mb-4"><span className="text-white">M J Hotel and Resorts Dhanbad</span></h2>
                {/* <Link onClick={ClickHandler} to="/gallery" className="th-btn style3 th-icon">VIEW MORE PREVIEWS</Link> */}
             </div>
          </div>

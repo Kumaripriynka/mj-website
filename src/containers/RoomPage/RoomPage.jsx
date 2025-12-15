@@ -5,6 +5,7 @@ import FooterAreaS3 from '../../components/FooterAreaS3/FooterAreaS3';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
 import RoomAreaS6 from '../../components/RoomAreaS6/RoomAreaS6';
 import OfferAreaS4 from '../../components/OfferAreaS4/OfferAreaS4';
+import PoliciesNote from '../../components/PoliciesNote/PoliciesNote';
 
 const RoomPage = () => {
    return (
@@ -60,6 +61,13 @@ const RoomPage = () => {
             </div>
 
               <OfferAreaS4 hclass={'offer-area4 position-relative overflow-hidden space-top'} />
+
+            {/* Policies Note Component */}
+            <div style={{ background: '#112E2E', padding: '50px 0' }}>
+               <div className="container">
+                  <PoliciesNote isDarkBg={true} />
+               </div>
+            </div>
 
             {/* Rooms Content */}
             <RoomAreaS6 />

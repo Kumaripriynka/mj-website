@@ -33,7 +33,7 @@ const RoomsAreaS3 = (props) => {
                      <button className="tab-btn th-btn active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button" role="tab" aria-controls="nav-one" aria-selected="true">Luxury Room</button>
                      <button className="tab-btn th-btn" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button" role="tab" aria-controls="nav-two" aria-selected="false">Suits Room</button>
                      <button className="tab-btn th-btn" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three" type="button" role="tab" aria-controls="nav-three" aria-selected="false">Deluxe Room</button>
-                     <button className="tab-btn th-btn" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#nav-four" type="button" role="tab" aria-controls="nav-four" aria-selected="false">Twine Rooms</button>
+                     <button className="tab-btn th-btn" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#nav-four" type="button" role="tab" aria-controls="nav-four" aria-selected="false">Twin Rooms</button>
                   </div>
                </div>
             </div>

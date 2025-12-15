@@ -47,8 +47,28 @@ const FeatureArea = (props) => {
                      <p className="box-text">Our rooms are designed to give you maximum comfort and independence. You’ll find a microwave, fridge freezer, kettle and teas and coffees in every room.</p>
                      <Link onClick={ClickHandler} to="/service-details/1" className="th-btn2 style2">BOOK NOW</Link>
                   </div>
+               </div>               <div className="col-lg-6 col-xl-4">
+                  <div className="feature-card">
+                     <div className="feature-shape" style={{ backgroundImage: `url(${shapeImg})` }}></div>
+                     <div className="box-icon">
+                        <i className="fas fa-wheelchair" style={{ fontSize: '40px', color: '#C2913D' }}></i>
+                     </div>
+                     <h3 className="box-title"><Link onClick={ClickHandler} to="/service-details/1">Accessibility First</Link></h3>
+                     <p className="box-text">Wheelchair accessible throughout the property and fully equipped to accommodate guests with special needs. We welcome all our guests with dedicated facilities and support services.</p>
+                     <Link onClick={ClickHandler} to="/service-details/1" className="th-btn2 style2">BOOK NOW</Link>
+                  </div>
                </div>
-            </div>
+               <div className="col-lg-6 col-xl-4">
+                  <div className="feature-card">
+                     <div className="feature-shape" style={{ backgroundImage: `url(${shapeImg})` }}></div>
+                     <div className="box-icon">
+                        <i className="fas fa-ban" style={{ fontSize: '40px', color: '#C2913D' }}></i>
+                     </div>
+                     <h3 className="box-title"><Link onClick={ClickHandler} to="/service-details/1">Pet Policy</Link></h3>
+                     <p className="box-text">To maintain our high standards of hygiene and comfort for all guests, please note that pets are not allowed on our premises. We appreciate your understanding.</p>
+                     <Link onClick={ClickHandler} to="/service-details/1" className="th-btn2 style2">BOOK NOW</Link>
+                  </div>
+               </div>            </div>
          </div>
       </section>
    );

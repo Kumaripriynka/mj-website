@@ -101,7 +101,7 @@ const FooterArea = (props) => {
             <div className="container">
                 <div className="row gy-2 align-items-center">
                     <div className="col-lg-5">
-                        <p className="copyright-text">Copyright <i className="fal fa-copyright"></i> 2025 <Link onClick={ClickHandler} to="/">MJ Hotel</Link>. All Rights Reserved.</p>
+                        <p className="copyright-text">Copyright <i className="fal fa-copyright"></i> 2025 <Link onClick={ClickHandler} to="/">M J Hotel and Resorts</Link>. All Rights Reserved.</p>
                     </div>
                     {/* <div className="col-lg-7 text-center text-lg-end">
                         <div className="footer-links">

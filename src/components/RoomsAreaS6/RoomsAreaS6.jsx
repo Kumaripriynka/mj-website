@@ -18,7 +18,7 @@ const RoomsAreaS6 = () => {
     { label: 'Luxury Room', value: 'cat1' },
     { label: 'Suits Room', value: 'cat2' },
     { label: 'Deluxe Room', value: 'cat3' },
-    { label: 'Twine Rooms', value: 'cat4' },
+    { label: 'Twin Rooms', value: 'cat4' },
   ];
 
  const isVisible = (room) => {

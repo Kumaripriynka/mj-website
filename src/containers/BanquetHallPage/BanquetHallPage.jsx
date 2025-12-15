@@ -5,6 +5,7 @@ import FooterAreaS3 from '../../components/FooterAreaS3/FooterAreaS3';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
 import { Link } from 'react-router-dom';
 import gallery1 from '../../img/gallery/galery_1.png';
+import PoliciesNote from '../../components/PoliciesNote/PoliciesNote';
 
 
 const BanquetHallPage = () => {
@@ -46,13 +47,14 @@ const BanquetHallPage = () => {
                         color: '#fff', 
                         fontSize: 'clamp(32px, 5vw, 48px)', 
                         marginTop: '25px',
-                        marginBottom: '15px',
+                        // marginBottom: '35px',
                         fontWeight: '800'
                      }}>Banquet Hall</h1>
                      <p style={{ 
                         color: '#D8DBDC', 
                         fontSize: 'clamp(16px, 2vw, 18px)',
                         maxWidth: '600px',
+                        marginBottom: '40px',
                         margin: '0 auto'
                      }}>Celebrate your special moments in our elegant banquet hall</p>
                   </div>
@@ -177,6 +179,13 @@ const BanquetHallPage = () => {
                      fontWeight: '700',
                      textTransform: 'uppercase'
                   }}>Contact Us</Link>
+               </div>
+            </div>
+
+            {/* Policies Note Component */}
+            <div style={{ background: '#112E2E', padding: '50px 0' }}>
+               <div className="container">
+                  <PoliciesNote isDarkBg={true} />
                </div>
             </div>
 

@@ -51,6 +51,11 @@ const amenities = [
       icon: icon6,
       image: image6,
    },
+   {
+      title: 'Wheelchair Accessible',
+      icon: icon3,
+      image: image7,
+   },
 ];
 
 const ClickHandler = () => {
@@ -70,10 +75,11 @@ const HotelAreaS2 = (props) => {
                <div className="col-lg-5">
                   <div className="title-area text-center space">
                      <span className="sub-title2">HOTEL AMENITIES</span>
-                     <h2 className="sec-title ">Premium Facilities at MJ Hotel</h2>
+                     <h2 className="sec-title ">Premium Facilities at M J Hotel and Resorts</h2>
                      <p className="fs-18 mt-30 text-golden">
-                        MJ Hotel & Resort offers world-class amenities including a swimming pool, 2 pillar-less banquets, 
+                        M J Hotel and Resorts offers world-class amenities including a swimming pool, 2 pillar-less banquets, 
                         32,000 sqft open lawn, fully-equipped gym, and upcoming SPA and Rooftop Lounge Bar. 
+                        We are wheelchair accessible and friendly for special abled persons. Please note: Pet not allowed.
                         Experience luxury and comfort with our state-of-the-art facilities designed for both business and leisure travelers.
                      </p>
                   </div>

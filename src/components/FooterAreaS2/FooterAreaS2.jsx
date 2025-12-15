@@ -50,7 +50,7 @@ const FooterAreaS2 = (props) => {
             <div className="copyright-wrap">
                <div className="row gy-2 align-items-center">
                   <div className="col-lg-6">
-                     <p className="copyright-text">Copyright <i className="fal fa-copyright"></i> 2025 <Link onClick={ClickHandler} to="/">MJ Hotel</Link>. All Rights Reserved.</p>
+                     <p className="copyright-text">Copyright <i className="fal fa-copyright"></i> 2025 <Link onClick={ClickHandler} to="/">M J Hotel and Resorts</Link>. All Rights Reserved.</p>
                   </div>
                   {/* <div className="col-lg-6 text-center text-md-end">
                      <div className="footer-links">
