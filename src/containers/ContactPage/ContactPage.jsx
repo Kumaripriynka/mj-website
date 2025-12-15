@@ -52,7 +52,7 @@ const ContactPage = () => {
                         fontSize: 'clamp(16px, 2vw, 18px)',
                         maxWidth: '600px',
                         margin: '0 auto'
-                     }}>Get in touch with MJ Hotel & Resort</p>
+                     }}>Get in touch with M J Hotel and Resorts</p>
                   </div>
                </div>
             </div>

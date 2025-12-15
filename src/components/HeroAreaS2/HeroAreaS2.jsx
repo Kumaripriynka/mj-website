@@ -15,25 +15,25 @@ import group from '../../img/normal/group-img1.png';
 const slides = [
    {
       id: '01',
-      title: 'MJ RESORT SINCE 1999',
+      title: 'M J HOTEL AND RESORTS SINCE 1999',
       subtitle: 'Discover The Perfect Blend of Luxury Resort ',
-      dicpt: 'MJ hotel is a peaceful place to rest, to recover your energies and to have great laughs with your family.',
+      dicpt: 'M J Hotel and Resorts is a peaceful place to rest, to recover your energies and to have great laughs with your family.',
       reviews: '128k+ Reviews',
       SliderBg: SliderBg1
    },
    {
       id: '02',
-      title: 'MJ RESORT SINCE 1999',
+      title: 'M J HOTEL AND RESORTS SINCE 1999',
       subtitle: 'Discover The Perfect Blend of Luxury Resort',
-      dicpt: 'MJ hotel is a peaceful place to rest, to recover your energies and to have great laughs with your family.',
+      dicpt: 'M J Hotel and Resorts is a peaceful place to rest, to recover your energies and to have great laughs with your family.',
       reviews: '128k+ Reviews',
       SliderBg: SliderBg2,
    },
    {
       id: '03',
-      title: 'ROTAL RESORT SINCE 1999',
+      title: 'M J HOTEL AND RESORTS SINCE 1999',
       subtitle: 'Discover The Perfect Blend of Luxury Resort',
-      dicpt: 'MJ hotel is a peaceful place to rest, to recover your energies and to have great laughs with your family.',
+      dicpt: 'M J Hotel and Resorts is a peaceful place to rest, to recover your energies and to have great laughs with your family.',
       reviews: '128k+ Reviews',
       SliderBg: SliderBg3,
    },

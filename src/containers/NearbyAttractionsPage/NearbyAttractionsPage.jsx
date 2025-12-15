@@ -51,8 +51,9 @@ const NearbyAttractionsPage = () => {
                         color: '#D8DBDC', 
                         fontSize: 'clamp(16px, 2vw, 18px)',
                         maxWidth: '600px',
+                         marginBottom: '20px',
                         margin: '0 auto'
-                     }}>Explore the best places around MJ Hotel & Resort</p>
+                     }}>Explore the best places around M J Hotel and Resorts</p>
                   </div>
                </div>
             </div>

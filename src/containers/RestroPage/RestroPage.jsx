@@ -3,6 +3,7 @@ import HeaderAreaS2 from '../../components/HeaderAreaS2/HeaderAreaS2';
 import HeaderTopS2 from '../../components/HeaderTopS2/HeaderTopS2';
 import FooterAreaS3 from '../../components/FooterAreaS3/FooterAreaS3';
 import Scrollbar from '../../components/Scrollbar/Scrollbar';
+import PoliciesNote from '../../components/PoliciesNote/PoliciesNote';
 
 const RestroPage = () => {
    return (
@@ -50,6 +51,7 @@ const RestroPage = () => {
                         color: '#D8DBDC', 
                         fontSize: 'clamp(16px, 2vw, 18px)',
                         maxWidth: '600px',
+                         marginBottom: '20px',
                         margin: '0 auto'
                      }}>Elevate your dining experience with breathtaking views</p>
                   </div>
@@ -99,19 +101,47 @@ const RestroPage = () => {
                               color: '#fff',
                               fontSize: '28px',
                               fontWeight: '600',
-                              marginBottom: '20px'
+                              // marginBottom: '20px'
                            }}>RESTRO & ROOFTOP BAR</h3>
                            <p style={{
                               color: '#D8DBDC',
                               fontSize: '18px',
                               lineHeight: '1.8',
-                              marginBottom: '30px',
+                              // marginBottom: '60px',
                               maxWidth: '700px',
                               marginLeft: 'auto',
                               marginRight: 'auto'
                            }}>
                               We're crafting an exceptional dining and entertainment experience that will take your breath away. Our RESTRO & ROOFTOP BAR will offer a perfect blend of exquisite cuisine, handcrafted cocktails, and panoramic views.
                            </p>
+                           <div style={{
+                              background: 'rgba(194, 145, 61, 0.1)',
+                              padding: '20px 30px',
+                              borderRadius: '8px',
+                              border: '1px solid rgba(194, 145, 61, 0.3)',
+                              marginBottom: '40px',
+                              maxWidth: '700px',
+                              marginLeft: 'auto',
+                              marginRight: 'auto'
+                           }}>
+                              <h4 style={{
+                                 color: '#C2913D',
+                                 fontSize: '16px',
+                                 fontWeight: '600',
+                                 // marginBottom: '20px',
+                                 marginTop: '0'
+                              }}>Facilities & Policies</h4>
+                              <div style={{ color: '#D8DBDC', fontSize: '15px', lineHeight: '1.8' }}>
+                                 <p style={{ marginBottom: '8px' }}>
+                                    <i className="fas fa-wheelchair" style={{ color: '#C2913D', marginRight: '10px' }}></i>
+                                    <strong>Wheelchair Accessible</strong> - Fully accessible for special abled persons
+                                 </p>
+                                 <p style={{ marginBottom: '0' }}>
+                                    <i className="fas fa-ban" style={{ color: '#C2913D', marginRight: '10px' }}></i>
+                                    <strong>Pet Not Allowed</strong> - Please note we do not permit pets on premises
+                                 </p>
+                              </div>
+                           </div>
                            <div style={{
                               display: 'inline-flex',
                               alignItems: 'center',
@@ -152,6 +182,13 @@ const RestroPage = () => {
                         </div>
                      </div>
                   </div>
+               </div>
+            </div>
+
+            {/* Policies Note Component */}
+            <div style={{ background: '#112E2E', padding: '50px 0' }}>
+               <div className="container">
+                  <PoliciesNote isDarkBg={true} />
                </div>
             </div>
 

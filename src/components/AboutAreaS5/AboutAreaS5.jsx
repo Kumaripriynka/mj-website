@@ -26,7 +26,7 @@ const AboutAreaS5 = (props) => {
                           </div>
                           <div className="box-content">
                               <div className="award"><img src={Award} alt="" /></div>
-                              <h3 className="box-title">Coming Soon - Grand Launch 2025</h3>
+                              <h3 className="box-title">Brand New Hotel</h3>
                           </div>
                       </div>
 
@@ -35,11 +35,11 @@ const AboutAreaS5 = (props) => {
               <div className="col-xl-5">
                   <div className="ps-xxl-5 ms-xxl-2">
                       <div className="title-area mb-37">
-                          <span className="sub-title2 style1">ABOUT MJ HOTEL</span>
-                          <h2 className="sec-title">Welcome To MJ Hotel <span>Luxury Awaits in The Heart of Dhanbad</span></h2>
+                          <span className="sub-title2 style1">ABOUT M J HOTEL AND RESORTS</span>
+                          <h2 className="sec-title">Welcome To M J Hotel and Resorts <span>Luxury Awaits in The Heart of Dhanbad</span></h2>
                       </div>
-                      <p className="extra-text text-body fs-18 mb-0">Located at Post-K.G Ashram, Jailgarha, NH-2, Grand Trunk Road in Gobindpur, Dhanbad, MJ Hotel & Resort is a premier 4-star luxury destination featuring 66 elegantly designed rooms. We combine modern elegance with warm Indian hospitality to create an unforgettable experience.</p>
-                      <p className="extra-text text-body fs-18 mb-30">Our world-class amenities include a swimming pool, 2 pillar-less banquets, a sprawling 32,000 sqft open lawn, fully-equipped gym, and upcoming SPA and Rooftop Lounge Bar. Our strategic location on the historic Grand Trunk Road provides excellent connectivity while maintaining a peaceful atmosphere.</p>
+                      <p className="extra-text text-body fs-18 mb-0">Located at Post-K.G Ashram, Jailgarha, NH-2, Grand Trunk Road in Gobindpur, Dhanbad, M J Hotel and Resorts is a premier 4-star luxury destination featuring 66 elegantly designed rooms. We combine modern elegance with warm Indian hospitality to create an unforgettable experience.</p>
+                      <p className="extra-text text-body fs-18 mb-30">Our world-class amenities include a swimming pool, 2 pillar-less banquets, a sprawling 32,000 sqft open lawn, fully-equipped gym, and upcoming SPA and Rooftop Lounge Bar. Our strategic location on the historic Grand Trunk Road provides excellent connectivity while maintaining a peaceful atmosphere. We are wheelchair accessible and fully equipped to accommodate guests with special needs. Please note: Pet not allowed.</p>
                       
                       <div className="mb-40">
                           <h4 className="mb-2" style={{ color: '#C2913D', fontSize: '18px', fontWeight: '600' }}>Our Mission</h4>

@@ -69,7 +69,7 @@ const NearbyAttractions = (props) => {
                      <span className="sub-title2">EXPLORE NEARBY</span>
                      <h2 className="sec-title">Nearby Attractions</h2>
                      <p className="fs-18 mt-30">
-                        Discover the best attractions and landmarks near MJ Hotel & Resort. 
+                        Discover the best attractions and landmarks near M J Hotel and Resorts. 
                         From historical sites to natural wonders, explore the rich culture and beauty of Dhanbad.
                      </p>
                   </div>
@@ -180,7 +180,7 @@ const NearbyAttractions = (props) => {
                         marginBottom: '30px',
                         color: '#D8DBDC'
                      }}>
-                        MJ Hotel & Resort is strategically located on NH-2 (Grand Trunk Road), ensuring seamless connectivity to all major cities across India.
+                        M J Hotel and Resorts is strategically located on NH-2 (Grand Trunk Road), ensuring seamless connectivity to all major cities across India.
                      </p>
                      <div className="row gy-3">
                         <div className="col-md-3 col-6">
@@ -193,8 +193,15 @@ const NearbyAttractions = (props) => {
                         <div className="col-md-3 col-6">
                            <div style={{ padding: '15px' }}>
                               <i className="fas fa-plane" style={{ fontSize: '32px', color: '#C2913D', marginBottom: '10px' }}></i>
-                              <h5 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Ranchi Airport</h5>
-                              <p style={{ fontSize: '14px', margin: 0, color: '#D8DBDC' }}>165 km away</p>
+                              <h5 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Durgapur Airport</h5>
+                              <p style={{ fontSize: '14px', margin: 0, color: '#D8DBDC' }}>100 km away</p>
+                           </div>
+                        </div>
+                        <div className="col-md-3 col-6">
+                           <div style={{ padding: '15px' }}>
+                              <i className="fas fa-plane" style={{ fontSize: '32px', color: '#C2913D', marginBottom: '10px' }}></i>
+                              <h5 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Kolkata Airport</h5>
+                              <p style={{ fontSize: '14px', margin: 0, color: '#D8DBDC' }}>270 km away</p>
                            </div>
                         </div>
                         <div className="col-md-3 col-6">
@@ -204,18 +211,20 @@ const NearbyAttractions = (props) => {
                               <p style={{ fontSize: '14px', margin: 0, color: '#D8DBDC' }}>Direct Access</p>
                            </div>
                         </div>
-                        <div className="col-md-3 col-6">
-                           <div style={{ padding: '15px' }}>
-                              <i className="fas fa-city" style={{ fontSize: '32px', color: '#C2913D', marginBottom: '10px' }}></i>
-                              <h5 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Major Cities</h5>
-                              <p style={{ fontSize: '14px', margin: 0, color: '#D8DBDC' }}>Well Connected</p>
-                           </div>
-                        </div>
                      </div>
                      <div style={{ marginTop: '25px', fontSize: '15px', color: '#D8DBDC' }}>
-                        <p style={{ marginBottom: '8px' }}>
-                           <strong style={{ color: '#C2913D' }}>Easy Access From:</strong> Kolkata (260 km) • Ranchi (165 km) • Patna (240 km) • Jamshedpur (140 km) • Asansol (90 km)
+                        <p style={{ marginBottom: '12px' }}>
+                           <strong style={{ color: '#C2913D' }}>Nearest Airports:</strong> Durgapur (100 km) • Kolkata (270 km) • Ranchi (165 km)
                         </p>
+                        <div style={{ backgroundColor: 'rgba(194, 145, 61, 0.1)', padding: '15px', borderRadius: '8px', borderLeft: '3px solid #C2913D' }}>
+                           <h5 style={{ color: '#C2913D', marginBottom: '10px', fontSize: '14px', fontWeight: '600' }}>Major City Connectivity</h5>
+                           <p style={{ marginBottom: '8px', fontSize: '14px' }}>
+                              <strong style={{ color: '#C2913D' }}>Durgapur:</strong> Industrial city with excellent business connectivity, just 100 km away. Great for corporate travelers.
+                           </p>
+                           <p style={{ marginBottom: '0', fontSize: '14px' }}>
+                              <strong style={{ color: '#C2913D' }}>Kolkata:</strong> India's cultural capital and major metropolitan hub, 270 km away. Perfect for international and domestic connections with major airlines and excellent road connectivity via NH-2.
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>

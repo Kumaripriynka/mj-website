@@ -18,14 +18,14 @@ const OfferAreaS4 = (props) => {
    return (
       <section className={"" + props.hclass} id="offer-sec">
          <div className="shadow-area mb-0">
-            <div className="shadow-title">MJ hotel rooms & suits</div>
+            <div className="shadow-title">M J Hotel and Resorts rooms & suits</div>
          </div>
          <div className="container">
             <div className="row justify-content-between">
                <div className="col-xl-4 text-center text-xl-start">
                   <div className="title-area">
                      <span className="sub-title2 style1">LUXURY COMFORT</span>
-                     <h2 className="sec-title text-white">MJ Hotel rooms & suits</h2>
+                     <h2 className="sec-title text-white">M J Hotel and Resorts rooms & suits</h2>
                   </div>
                </div>
             </div>
@@ -60,7 +60,7 @@ const OfferAreaS4 = (props) => {
                         </div>
                         <div className="media-body">
                            <h3 className="box-title"><Link onClick={ClickHandler} to="/room">Exclusive Suite</Link></h3>
-                           <p className="price">Launching Soon</p>
+                           <p className="price">Booking Open</p>
                         </div>
                      </div>
                   </SwiperSlide>
@@ -71,7 +71,7 @@ const OfferAreaS4 = (props) => {
                         </div>
                         <div className="media-body">
                            <h3 className="box-title"><Link onClick={ClickHandler} to="/room">Deluxe Room</Link></h3>
-                           <p className="price">Launching Soon</p>
+                           <p className="price">Booking Open</p>
                         </div>
                      </div>
                   </SwiperSlide>
@@ -81,19 +81,8 @@ const OfferAreaS4 = (props) => {
                            <img src={Offer3} alt="img" />
                         </div>
                         <div className="media-body">
-                           <h3 className="box-title"><Link onClick={ClickHandler} to="/room">Twine Room</Link></h3>
-                           <p className="price">Launching Soon</p>
-                        </div>
-                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                     <div className="offer-box2">
-                        <div className="box-img global-img">
-                           <img src={Offer4} alt="img" />
-                        </div>
-                        <div className="media-body">
-                           <h3 className="box-title"><Link onClick={ClickHandler} to="/room">Single Room</Link></h3>
-                           <p className="price">Launching Soon</p>
+                           <h3 className="box-title"><Link onClick={ClickHandler} to="/room">Twin Room</Link></h3>
+                           <p className="price">Booking Open</p>
                         </div>
                      </div>
                   </SwiperSlide>
@@ -104,7 +93,7 @@ const OfferAreaS4 = (props) => {
                         </div>
                         <div className="media-body">
                            <h3 className="box-title"><Link onClick={ClickHandler} to="/room">Exclusive Suite</Link></h3>
-                         <p className="price">Launching Soon</p>
+                         <p className="price">Booking Open</p>
                         </div>
                      </div>
                   </SwiperSlide>
@@ -115,7 +104,7 @@ const OfferAreaS4 = (props) => {
                         </div>
                         <div className="media-body">
                            <h3 className="box-title"><Link onClick={ClickHandler} to="/room">Deluxe Room</Link></h3>
-                           <p className="price">Launching Soon</p>
+                           <p className="price">Booking Open</p>
                         </div>
                      </div>
                   </SwiperSlide>
@@ -125,8 +114,8 @@ const OfferAreaS4 = (props) => {
                            <img src={Offer3} alt="img" />
                         </div>
                         <div className="media-body">
-                           <h3 className="box-title"><Link onClick={ClickHandler} to="/room">Twine Room</Link></h3>
-                           <p className="price">Launching Soon</p>
+                           <h3 className="box-title"><Link onClick={ClickHandler} to="/room">Twin Room</Link></h3>
+                           <p className="price">Booking Open</p>
                         </div>
                      </div>
                   </SwiperSlide>
@@ -137,7 +126,7 @@ const OfferAreaS4 = (props) => {
                         </div>
                         <div className="media-body">
                            <h3 className="box-title"><Link onClick={ClickHandler} to="/room">Single Room</Link></h3>
-                           <p className="price">Launching Soon</p>
+                           <p className="price">Booking Open</p>
                         </div>
                      </div>
                   </SwiperSlide>

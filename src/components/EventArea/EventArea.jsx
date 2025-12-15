@@ -126,7 +126,7 @@ const EventArea = (props) => {
                         <div className="discount-wrapp">
                            <VideoModal vidclass={'play-btn popup-video'} />
                            <div className='MJ-hotel-round'>
-                              <CircleTextS2 text="MJ Hotel Dhanbad * Launching Soon * MJ Hotel Dhanbad *" />
+                              <CircleTextS2 text="M J Hotel and Resorts Dhanbad * Booking Open * M J Hotel and Resorts Dhanbad *" />
                            </div>
                         </div>
                      </div>

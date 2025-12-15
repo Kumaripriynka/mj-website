@@ -39,7 +39,7 @@ const FooterAreaS3 = (props) => {
                               lineHeight: '1.6',
                               fontSize: '16px',
                               paddingRight: '20px'
-                           }}>MJ Hotel & Resort - A peaceful retreat in the heart of Dhanbad</p>
+                           }}>M J Hotel and Resorts - A peaceful retreat in the heart of Dhanbad</p>
                         </div>
                      </div>
                   </div>
@@ -104,7 +104,7 @@ const FooterAreaS3 = (props) => {
                <div className="row align-items-center">
                   <div className="col-lg-12" style={{ textAlign: 'center' }}>
                      <p className="copyright-text" style={{ margin: 0 }}>
-                        Copyright <i className="fal fa-copyright"></i> 2025 <Link onClick={ClickHandler} to="/">MJ Hotel</Link>. All Rights Reserved. <span style={{ marginLeft: '5px' }}>Designed and developed by love with <a href="https://www.snmrgroup.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#C2913D', textDecoration: 'none' }}>snmrgroup</a></span>
+                        Copyright <i className="fal fa-copyright"></i> 2025 <Link onClick={ClickHandler} to="/">M J Hotel and Resorts</Link>. All Rights Reserved. <span style={{ marginLeft: '5px' }}>Designed and developed by love with <a href="https://www.snmrgroup.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#C2913D', textDecoration: 'none' }}>snmrgroup</a></span>
                      </p>
                   </div>
                </div>

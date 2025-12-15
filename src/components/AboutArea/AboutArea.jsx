@@ -25,14 +25,14 @@ const AboutArea = (props) => {
               <div className="col-lg-6 col-xxl-4">
                   <div className="title-area mb-30 pe-xxl-5">
                       <img src={title} alt="shape" />
-                      <h2 className="sec-title text-white">About MJ Hotel</h2>
+                      <h2 className="sec-title text-white">About M J Hotel and Resorts</h2>
                       <img src={title2} alt="shape" />
-                      <p className="text-body fs-18 mt-25 mb-40">MJ Hotel & Resorts is passionate about "creating moments"
+                      <p className="text-body fs-18 mt-25 mb-40">M J Hotel and Resorts is passionate about "creating moments"
                           and understands that little things have a significant impact on our visitors, owners, and
                           employees. We carry out routine tasks in exceptional ways.</p>
-                      <p className="text-body fs-18 mb-60">MJ Hotel with its nice restaurant ensure healthily, delicious &
+                      <p className="text-body fs-18 mb-60">M J Hotel and Resorts with its nice restaurant ensure healthily, delicious &
                           different
-                          cuisines to our beloved clients. Warmly welcome to MJ Hotel & enjoy our luxurious suites & sea
+                          cuisines to our beloved clients. Warmly welcome to M J Hotel and Resorts & enjoy our luxurious suites & sea
                           views.</p>
                   </div>
                   <div className="counter-card-wrap">

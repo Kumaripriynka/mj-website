@@ -58,7 +58,7 @@ const WelcomeFeatures = () => {
         { img: icon2, title: "Business Lounge" },
         { img: icon3, title: "Meeting room facilities" },
         { img: icon4, title: "stocked bar" },
-        { img: icon5, title: "3 Star Hotel at Dhanbad" },
+        { img: icon5, title: "4 Star Hotel at Dhanbad" },
         { img: icon6, title: "Approved by Ministry of Tourism" },
     ];
 
@@ -70,7 +70,7 @@ const WelcomeFeatures = () => {
                         Step Into a World of Elegance
                     </h2>
                     <p className="welcome-text">
-                        Discover unparalleled business hospitality at MJ Hotel
+                        Discover unparalleled business hospitality at M J Hotel and Resorts
                         <br />
                         <span>
                             <br />Once your workday concludes, treat yourself to a bit of retail therapy...<br />
