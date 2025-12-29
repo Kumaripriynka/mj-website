@@ -86,10 +86,10 @@ const BookingAreaS3 = (props) => {
                      <div className="call-info">
                         <div className="call-icon"><a href="tel:+919876543210"><img src={Call} alt="" /></a></div>
                         <div className="media-body"><span className="call-label">Get in Touch with us</span>
-                           <p className="mail-link"><a href="tel:82280 45049">82280 45049</a></p>
+                           <p className="mail-link"><a href="tel:9296913100">9296913100</a></p>
                         </div>
                          <div className="media-body"><span className="email-label">Get in Touch with us</span>
-                           <p className="mail-link"><a href="mailto:gm@mjhotelandresorts.com">gm@mjhotelandresorts.com</a></p>
+                           <p className="mail-link"><a href="mailto:fo@mjhotelandresorts.com">fo@mjhotelandresorts.com</a></p>
                            
                         </div>
                      </div>
