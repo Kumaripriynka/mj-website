@@ -1,20 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GalleryBg from '../../img/bg/gallery_bg_2.png';
-import gallery1 from '../../img/gallery/galery_1.png';
-import gallery2 from '../../img/gallery/galery_2.png';
-import gallery3 from '../../img/gallery/galery_3.png';
-import gallery4 from '../../img/pages/delux.png';
-import gallery5 from '../../img/package/luxuary.png';
-import gallery6 from '../../img/pages/twins.png';
 
 const GalleryAreaS3 = (props) => {
    const ClickHandler = () => {
       window.scrollTo(10, 0);
    }
+   const cards = [
+      { src: '/mj-1.jpeg', alt: 'Open lawn wedding setup', label: 'Grand Lawn' },
+      { src: '/mj-3.jpeg', alt: 'Decorated banquet hall', label: 'Banquet Elegance' },
+      { src: '/mj-4.jpeg', alt: 'Pool lounge evening', label: 'Pool Lounge' },
+      { src: '/mj-5.jpeg', alt: 'Lobby welcome area', label: 'Lobby Welcome' },
+      { src: '/mj-6.jpeg', alt: 'Luxury suite interiors', label: 'Luxury Suite' },
+      { src: '/mj-7.jpeg', alt: 'Outdoor dining under lights', label: 'Alfresco Dining' },
+   ];
    return (
       <div className={"" + props.hclass} style={{ backgroundImage: `url(${GalleryBg})` }}>
          <div className="container">
+
             <div className="gallery-title-area mb-50">
                <div className="title-area">
                   <span className="sub-title2 style1">Brand New Hotel in Dhanbad</span>
@@ -23,55 +26,20 @@ const GalleryAreaS3 = (props) => {
                <p className="mt-3">Get a glimpse of the luxury and elegance that awaits you at M J Hotel and Resorts Dhanbad. Experience premium hospitality in the heart of Jharkhand.</p>
             </div>
             <div className="row gy-4">
-               <div className="col-md-6 col-lg-4 gallery-card_wrapp">
-                  <div className="gallery-card">
-                     <div className="box-img">
-                        <img src={gallery1} alt="Luxury Room Preview" />
+               {cards.map((card, idx) => (
+                  <div key={card.label} className="col-md-6 col-lg-4 gallery-card_wrapp">
+                     <div className="gallery-card">
+                        <div className="box-img">
+                           <img src={card.src} alt={card.alt} />
+                        </div>
+                        <a href="#" className="simple-btn" aria-label={card.label}>
+                           <i className="fa-brands fa-instagram"></i>
+                        </a>
                      </div>
-                     <a href="#" className="simple-btn"><i className="fa-brands fa-instagram"></i></a>
                   </div>
-               </div>
-               <div className="col-md-6 col-lg-4 gallery-card_wrapp">
-                  <div className="gallery-card">
-                     <div className="box-img">
-                        <img src={gallery2} alt="Banquet Hall Preview" />
-                     </div>
-                     <a href="#" className="simple-btn"><i className="fa-brands fa-instagram"></i></a>
-                  </div>
-               </div>
-               <div className="col-md-6 col-lg-4 gallery-card_wrapp">
-                  <div className="gallery-card">
-                     <div className="box-img">
-                        <img src={gallery3} alt="Restaurant Preview" />
-                     </div>
-                     <a href="#" className="simple-btn"><i className="fa-brands fa-instagram"></i></a>
-                  </div>
-               </div>
-               <div className="col-md-6 col-lg-4 gallery-card_wrapp">
-                  <div className="gallery-card">
-                     <div className="box-img">
-                        <img src={gallery4} alt="Swimming Pool Area" />
-                     </div>
-                     <a href="#" className="simple-btn"><i className="fa-brands fa-instagram"></i></a>
-                  </div>
-               </div>
-               <div className="col-md-6 col-lg-4 gallery-card_wrapp">
-                  <div className="gallery-card">
-                     <div className="box-img">
-                        <img src={gallery5} alt="Conference Facility" />
-                     </div>
-                     <a href="#" className="simple-btn"><i className="fa-brands fa-instagram"></i></a>
-                  </div>
-               </div>
-               <div className="col-md-6 col-lg-4 gallery-card_wrapp">
-                  <div className="gallery-card">
-                     <div className="box-img">
-                        <img src={gallery6} alt="Hotel Exterior" />
-                     </div>
-                     <a href="#" className="simple-btn"><i className="fa-brands fa-instagram"></i></a>
-                  </div>
-               </div>
+               ))}
             </div>
+
             <div className="gallery-btn mt-50 text-center">
                <h2 className="sec-title mb-4"><span className="text-white">M J Hotel and Resorts Dhanbad</span></h2>
                {/* <Link onClick={ClickHandler} to="/gallery" className="th-btn style3 th-icon">VIEW MORE PREVIEWS</Link> */}

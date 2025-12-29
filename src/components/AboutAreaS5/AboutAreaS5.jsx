@@ -1,7 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Ab5 from '../../img/normal/aboutmj.png'
-import Ab6 from '../../img/normal/abt_6.png'
 import Award from '../../img/normal/mj.png'
 import CountUp from 'react-countup';
 
@@ -17,12 +14,12 @@ const AboutAreaS5 = (props) => {
                   <div className="img-box5">
                       <div className="about-img-area">
                           <div className="img1 th-parallax">
-                              <img className="w-100" src={Ab5} alt="" />
+                              <img className="w-100" src="/mj-8.jpeg" alt="MJ Hotel & Resorts exterior" />
                           </div>
                       </div>
                       <div className="about-wrapp">
                           <div className="img2">
-                              <img src={Ab6} alt="" />
+                              <img src="/mj-9.jpeg" alt="MJ Hotel & Resorts banquet setup" />
                           </div>
                           <div className="box-content">
                               <div className="award"><img src={Award} alt="" /></div>

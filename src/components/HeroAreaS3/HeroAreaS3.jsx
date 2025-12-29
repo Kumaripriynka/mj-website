@@ -13,7 +13,6 @@ import SliderBg3 from '../../img/event/event3.png';
 import SliderBg4 from '../../img/event/event4.png';
 import SliderBg5 from '../../img/event/event5.png';
 import SliderBg6 from '../../img/event/event6.png';
-
 import left from '../../img/icon/hero-arrow-left.svg';
 import right from '../../img/icon/hero-arrow-right.svg';
 import room from '../../img/room/room-view.jpg';
@@ -57,6 +56,42 @@ const slides = [
       title: 'Banquet Hall for Every Occasion',
       dicpt: 'A modern banquet hall ideal for parties, receptions, corporate meets, and social gatherings.',
       SliderBg: SliderBg6,
+   },
+   {
+      id: '07',
+      title: 'Dream Weddings at M J Hotel',
+      dicpt: 'Say “I do” surrounded by manicured lawns and contemporary luxury.',
+      SliderBg: '/mj-1.jpeg'
+   },
+   {
+      id: '08',
+      title: 'Celebrate in Sophisticated Banquets',
+      dicpt: 'Plan birthdays, anniversaries, and milestones in our pillar-less halls.',
+      SliderBg: '/mj-3.jpeg',
+   },
+   {
+      id: '09',
+      title: 'Poolside & Lounge Evenings',
+      dicpt: 'Unwind beside the shimmering pool with curated cocktails and music.',
+      SliderBg: '/mj-4.jpeg',
+   },
+   {
+      id: '10',
+      title: 'Elegant Lobby Welcome',
+      dicpt: 'A grand entrance to greet your guests with signature MJ hospitality.',
+      SliderBg: '/mj-5.jpeg',
+   },
+   {
+      id: '11',
+      title: 'Premium Suites & Rooms',
+      dicpt: 'Immerse yourself in plush interiors crafted for business and leisure.',
+      SliderBg: '/mj-6.jpeg',
+   },
+   {
+      id: '12',
+      title: 'Verdant Outdoor Experiences',
+      dicpt: 'Host alfresco dinners and sunset cocktails on expansive greens.',
+      SliderBg: '/mj-7.jpeg',
    },
 
 ];
